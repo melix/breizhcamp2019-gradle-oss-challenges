@@ -1,0 +1,1272 @@
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script src="../js/jquery.min-1.11.0.js">
+		</script>
+		<script src="../js/flot-0.8.1-min.js">
+		</script>
+		<script src="../js/flot.selection.min.js">
+		</script>
+		<script src="../js/report.js">
+		</script>
+		<script src="../js/performanceGraph.js">
+		</script>
+		<title>Performance test assembleDebug on santaTrackerAndroidBuild
+		</title>
+	</head>
+	<body>
+		<div id="content">
+			<h2>Test: assembleDebug on santaTrackerAndroidBuild
+			</h2>To reproduce, run ./gradlew cleanSantaTrackerAndroidBuild santaTrackerAndroidBuild cleanPerformanceAdhocTest :performance:performanceAdhocTest --scenarios 'assembleDebug on santaTrackerAndroidBuild' -x prepareSamples
+			<p>Tasks: assembleDebug
+			</p>
+			<p>Clean tasks: 
+			</p>
+			<div id="tooltip">
+			</div>
+			<h3>Total time (s)
+			</h3>
+			<div class="chart" id="totalTimeChart">
+				<p>Loading...
+				</p>
+			</div>
+			<div id="totalTimeChartLegend">
+			</div>
+			<h3>Confidence (%)
+			</h3>
+			<div class="chart" id="confidenceChart">
+				<p>Loading...
+				</p>
+			</div>
+			<div id="confidenceChartLegend">
+			</div>
+			<h3>Difference (%)
+			</h3>
+			<div class="chart" id="differenceChart">
+				<p>Loading...
+				</p>
+			</div>
+			<div id="differenceChartLegend">
+			</div>
+			<script>performanceTests.createPerformanceGraph('assembleDebug-on-santaTrackerAndroidBuild.json', [{"unit":"s","renderBackground":false,"chartId":"totalTimeChart","label":"total time","field":"totalTime"},{"unit":"%","renderBackground":false,"chartId":"confidenceChart","label":"confidence","field":"confidence"},{"unit":"%","renderBackground":true,"chartId":"differenceChart","label":"difference","field":"difference"}])
+			</script>
+			<h3>Test details
+			</h3>
+			<table class="test-details">
+				<tr>
+					<th>Scenario
+					</th>
+					<th>Test project
+					</th>
+					<th>Tasks
+					</th>
+					<th>Clean tasks
+					</th>
+					<th>Gradle args
+					</th>
+					<th>Gradle JVM args
+					</th>
+					<th>Daemon
+					</th>
+				</tr>
+				<tr>
+					<td>5.2-20181218000039+0000
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr>
+					<td>5.4-20190311000052+0000
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr>
+					<td>master
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+			</table>
+			<h3>Test history
+			</h3>
+			<table class="history">
+				<tr class="control-groups">
+					<th colspan="3"/>
+					<th colspan="6">Average build time
+					</th>
+					<th colspan="8">Details
+					</th>
+				</tr>
+				<tr>
+					<th>Date
+					</th>
+					<th>Branch
+					</th>
+					<th>Git commit
+					</th>
+					<th colspan="2">5.2-20181218000039+0000
+					</th>
+					<th colspan="2">5.4-20190311000052+0000
+					</th>
+					<th colspan="2">master
+					</th>
+					<th>Confidence
+					</th>
+					<th>Difference
+					</th>
+					<th>Test version
+					</th>
+					<th>Operating System
+					</th>
+					<th>Host
+					</th>
+					<th>JVM
+					</th>
+					<th>Test project
+					</th>
+					<th>Tasks
+					</th>
+					<th>Clean tasks
+					</th>
+					<th>Gradle args
+					</th>
+					<th>Gradle JVM opts
+					</th>
+					<th>Daemon
+					</th>
+				</tr>
+				<tr id="result555884177">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20937005" target="_blank">2019-03-14 22:27:23
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/7505bb9">7505bb9
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/507c821...7505bb9">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1969.500000 ms, min: 1847 ms, max: 2773 ms, se: 170.83 ms, values: [2132 ms, 2773 ms, 2064 ms, 2101 ms, 2149 ms, 2121 ms, 2251 ms, 2007 ms, 1956 ms, 2058 ms, 1924 ms, 2294 ms, 1995 ms, 1991 ms, 1940 ms, 1985 ms, 2218 ms, 1956 ms, 1949 ms, 1910 ms, 1870 ms, 2160 ms, 2004 ms, 1970 ms, 1871 ms, 1910 ms, 2189 ms, 1955 ms, 1969 ms, 1963 ms, 1969 ms, 2240 ms, 1928 ms, 1876 ms, 1924 ms, 1915 ms, 2292 ms, 1939 ms, 1875 ms, 1847 ms]">1.97 s
+					</td>
+					<td class="numeric more-detail">se: 170.83 ms
+					</td>
+					<td class="numeric min-value" title="median: 1966.000000 ms, min: 1864 ms, max: 2346 ms, se: 129.63 ms, values: [2162 ms, 2303 ms, 2085 ms, 2098 ms, 2013 ms, 2022 ms, 2346 ms, 2044 ms, 1994 ms, 2030 ms, 1961 ms, 2247 ms, 1966 ms, 1933 ms, 2006 ms, 1935 ms, 2238 ms, 1921 ms, 1945 ms, 1966 ms, 1989 ms, 2254 ms, 1953 ms, 1880 ms, 1914 ms, 1936 ms, 2135 ms, 1899 ms, 1955 ms, 1901 ms, 1956 ms, 2256 ms, 1991 ms, 1864 ms, 1946 ms, 1898 ms, 2197 ms, 1958 ms, 1917 ms, 1879 ms]">1.966 s
+					</td>
+					<td class="numeric more-detail">se: 129.63 ms
+					</td>
+					<td class="numeric">3.1%
+					</td>
+					<td class="numeric min-value">-3.5 ms (-0.18%)
+					</td>
+					<td>5.4-20190314211705+0000
+					</td>
+					<td>Linux 4.15.0-46-generic amd64
+					</td>
+					<td>dev71.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result709413343">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20932756" target="_blank">2019-03-14 19:10:03
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/507c821">507c821
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/0e87c88...507c821">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1995.000000 ms, min: 1902 ms, max: 2397 ms, se: 119.85 ms, values: [2097 ms, 2397 ms, 2067 ms, 2108 ms, 2111 ms, 2048 ms, 2288 ms, 1991 ms, 1994 ms, 2092 ms, 2070 ms, 2212 ms, 1941 ms, 1984 ms, 2014 ms, 1989 ms, 2198 ms, 1969 ms, 1917 ms, 1968 ms, 2004 ms, 2290 ms, 1978 ms, 1942 ms, 2019 ms, 1961 ms, 2240 ms, 1936 ms, 1991 ms, 1973 ms, 2010 ms, 2187 ms, 1987 ms, 1996 ms, 1922 ms, 1954 ms, 2230 ms, 1942 ms, 1921 ms, 1902 ms]">1.995 s
+					</td>
+					<td class="numeric more-detail">se: 119.85 ms
+					</td>
+					<td class="numeric min-value" title="median: 1981.500000 ms, min: 1896 ms, max: 2424 ms, se: 129.92 ms, values: [2106 ms, 2424 ms, 2127 ms, 2072 ms, 2033 ms, 2003 ms, 2261 ms, 2004 ms, 1938 ms, 2003 ms, 1985 ms, 2267 ms, 1967 ms, 1969 ms, 2022 ms, 2013 ms, 2208 ms, 1973 ms, 2002 ms, 2064 ms, 1959 ms, 2235 ms, 1966 ms, 1950 ms, 1941 ms, 1896 ms, 2232 ms, 1904 ms, 1911 ms, 1920 ms, 1945 ms, 2236 ms, 1905 ms, 1909 ms, 1946 ms, 1920 ms, 2234 ms, 1978 ms, 1916 ms, 1915 ms]">1.982 s
+					</td>
+					<td class="numeric more-detail">se: 129.92 ms
+					</td>
+					<td class="numeric">70.4%
+					</td>
+					<td class="numeric min-value">-13.5 ms (-0.68%)
+					</td>
+					<td>5.4-20190314165316+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev115.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1620093860">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20916906" target="_blank">2019-03-14 09:47:22
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/0e87c88">0e87c88
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/7676df3...0e87c88">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1987.500000 ms, min: 1880 ms, max: 2343 ms, se: 131.57 ms, values: [2121 ms, 2033 ms, 2171 ms, 2124 ms, 2343 ms, 2031 ms, 2020 ms, 2087 ms, 2001 ms, 2334 ms, 1976 ms, 2004 ms, 1967 ms, 2015 ms, 2337 ms, 1962 ms, 1970 ms, 1915 ms, 1941 ms, 2248 ms, 1956 ms, 1981 ms, 1937 ms, 1994 ms, 2273 ms, 1959 ms, 1948 ms, 1904 ms, 1950 ms, 2222 ms, 1966 ms, 1911 ms, 1971 ms, 2046 ms, 2225 ms, 1956 ms, 1880 ms, 1932 ms, 1975 ms, 2238 ms]">1.988 s
+					</td>
+					<td class="numeric more-detail">se: 131.57 ms
+					</td>
+					<td class="numeric min-value" title="median: 1976.000000 ms, min: 1871 ms, max: 2374 ms, se: 125.63 ms, values: [2017 ms, 2305 ms, 2103 ms, 2044 ms, 1974 ms, 2053 ms, 2374 ms, 2072 ms, 1935 ms, 1958 ms, 1972 ms, 2229 ms, 1946 ms, 1969 ms, 1943 ms, 1953 ms, 2275 ms, 1988 ms, 1982 ms, 1946 ms, 1935 ms, 2213 ms, 1919 ms, 1924 ms, 1900 ms, 1909 ms, 2214 ms, 1911 ms, 2003 ms, 1948 ms, 1978 ms, 2223 ms, 1996 ms, 1980 ms, 1871 ms, 1972 ms, 2185 ms, 1999 ms, 1929 ms, 1909 ms]">1.976 s
+					</td>
+					<td class="numeric more-detail">se: 125.63 ms
+					</td>
+					<td class="numeric">66.9%
+					</td>
+					<td class="numeric min-value">-11.5 ms (-0.58%)
+					</td>
+					<td>5.4-20190314085733+0000
+					</td>
+					<td>Linux 4.15.0-46-generic amd64
+					</td>
+					<td>dev71.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1328814168">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20914458" target="_blank">2019-03-14 06:06:07
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/7676df3">7676df3
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/519d85e...7676df3">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1985.000000 ms, min: 1897 ms, max: 2389 ms, se: 124.67 ms, values: [2123 ms, 2389 ms, 2063 ms, 2086 ms, 2056 ms, 2111 ms, 2229 ms, 2034 ms, 1986 ms, 2002 ms, 2011 ms, 2236 ms, 1985 ms, 1914 ms, 2024 ms, 1985 ms, 2221 ms, 1909 ms, 1985 ms, 1954 ms, 2040 ms, 2292 ms, 1967 ms, 1945 ms, 1907 ms, 1981 ms, 2231 ms, 1927 ms, 1953 ms, 1897 ms, 1975 ms, 2200 ms, 1979 ms, 1900 ms, 1955 ms, 1976 ms, 2257 ms, 1911 ms, 1944 ms, 1941 ms]">1.985 s
+					</td>
+					<td class="numeric more-detail">se: 124.67 ms
+					</td>
+					<td class="numeric min-value" title="median: 1982.000000 ms, min: 1901 ms, max: 2480 ms, se: 144.70 ms, values: [2206 ms, 2480 ms, 2066 ms, 2016 ms, 2110 ms, 2075 ms, 2311 ms, 2055 ms, 2064 ms, 2013 ms, 1989 ms, 2234 ms, 1901 ms, 1999 ms, 1944 ms, 1986 ms, 2237 ms, 1962 ms, 1927 ms, 1978 ms, 1920 ms, 2255 ms, 1960 ms, 1928 ms, 1914 ms, 1902 ms, 2224 ms, 1927 ms, 1965 ms, 1929 ms, 1936 ms, 2332 ms, 1947 ms, 1904 ms, 1926 ms, 1929 ms, 2240 ms, 1910 ms, 1919 ms, 2039 ms]">1.982 s
+					</td>
+					<td class="numeric more-detail">se: 144.7 ms
+					</td>
+					<td class="numeric">27.5%
+					</td>
+					<td class="numeric min-value">-3 ms (-0.15%)
+					</td>
+					<td>5.4-20190314033451+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev77.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1450282326">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20914121" target="_blank">2019-03-14 04:36:09
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/519d85e">519d85e
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/3397d32...519d85e">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 2000.000000 ms, min: 1870 ms, max: 2366 ms, se: 126.12 ms, values: [2086 ms, 2366 ms, 2117 ms, 2084 ms, 2078 ms, 2152 ms, 2357 ms, 2100 ms, 1980 ms, 1968 ms, 1996 ms, 2248 ms, 2042 ms, 1955 ms, 1963 ms, 2031 ms, 2267 ms, 2008 ms, 1933 ms, 1955 ms, 1924 ms, 2222 ms, 1924 ms, 2004 ms, 1983 ms, 1920 ms, 2227 ms, 1909 ms, 2045 ms, 1968 ms, 1969 ms, 2190 ms, 2124 ms, 1870 ms, 1965 ms, 1911 ms, 2135 ms, 1911 ms, 1921 ms, 1990 ms]">2 s
+					</td>
+					<td class="numeric more-detail">se: 126.12 ms
+					</td>
+					<td class="numeric min-value" title="median: 1965.000000 ms, min: 1873 ms, max: 2322 ms, se: 124.97 ms, values: [2116 ms, 2317 ms, 2090 ms, 2068 ms, 2074 ms, 2099 ms, 2322 ms, 2005 ms, 2017 ms, 1949 ms, 1982 ms, 2260 ms, 2019 ms, 1972 ms, 1893 ms, 1996 ms, 2180 ms, 1937 ms, 1949 ms, 1942 ms, 1907 ms, 2257 ms, 2009 ms, 1873 ms, 1958 ms, 1933 ms, 2176 ms, 1939 ms, 1903 ms, 1903 ms, 1938 ms, 2203 ms, 1919 ms, 1958 ms, 1898 ms, 1934 ms, 2210 ms, 1950 ms, 1922 ms, 1945 ms]">1.965 s
+					</td>
+					<td class="numeric more-detail">se: 124.97 ms
+					</td>
+					<td class="numeric">72.7%
+					</td>
+					<td class="numeric min-value">-35 ms (-1.75%)
+					</td>
+					<td>5.4-20190314015930+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev70.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result2037214175">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20905967" target="_blank">2019-03-13 22:42:03
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/3397d32">3397d32
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/ed7b52d...3397d32">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1990.500000 ms, min: 1905 ms, max: 2316 ms, se: 127.16 ms, values: [1999 ms, 2305 ms, 2049 ms, 2030 ms, 2043 ms, 2067 ms, 2316 ms, 2201 ms, 2007 ms, 1907 ms, 1997 ms, 2275 ms, 2070 ms, 1990 ms, 1920 ms, 1993 ms, 2226 ms, 1945 ms, 1909 ms, 1922 ms, 1937 ms, 2257 ms, 1955 ms, 1905 ms, 1913 ms, 1948 ms, 2168 ms, 1936 ms, 1927 ms, 1960 ms, 1910 ms, 2264 ms, 1962 ms, 2099 ms, 1966 ms, 1928 ms, 2218 ms, 1991 ms, 1935 ms, 1941 ms]">1.99 s
+					</td>
+					<td class="numeric more-detail">se: 127.16 ms
+					</td>
+					<td class="numeric min-value" title="median: 1969.000000 ms, min: 1853 ms, max: 2300 ms, se: 129.25 ms, values: [2045 ms, 2300 ms, 2046 ms, 2152 ms, 2081 ms, 2088 ms, 2237 ms, 2011 ms, 1996 ms, 1958 ms, 1994 ms, 2231 ms, 1906 ms, 1956 ms, 1946 ms, 1967 ms, 2227 ms, 1934 ms, 1976 ms, 2017 ms, 1906 ms, 2264 ms, 1971 ms, 1928 ms, 1911 ms, 1863 ms, 2165 ms, 1885 ms, 1974 ms, 1885 ms, 1946 ms, 2258 ms, 1931 ms, 1951 ms, 1943 ms, 1935 ms, 2247 ms, 1899 ms, 1853 ms, 1854 ms]">1.969 s
+					</td>
+					<td class="numeric more-detail">se: 129.25 ms
+					</td>
+					<td class="numeric">52.1%
+					</td>
+					<td class="numeric min-value">-21.5 ms (-1.08%)
+					</td>
+					<td>5.4-20190313210744+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev27.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1741069223">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20904934" target="_blank">2019-03-13 21:51:58
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/ed7b52d">ed7b52d
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/a0a1f75...ed7b52d">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric min-value" title="median: 2018.500000 ms, min: 1913 ms, max: 2499 ms, se: 142.12 ms, values: [2077 ms, 2499 ms, 2172 ms, 2132 ms, 2119 ms, 2110 ms, 2379 ms, 2066 ms, 1984 ms, 2057 ms, 1985 ms, 2352 ms, 2074 ms, 1993 ms, 1988 ms, 1999 ms, 2282 ms, 1985 ms, 2010 ms, 2019 ms, 1990 ms, 2298 ms, 1974 ms, 1997 ms, 1977 ms, 2048 ms, 2283 ms, 2011 ms, 2045 ms, 2018 ms, 2036 ms, 2287 ms, 1984 ms, 1962 ms, 1964 ms, 1983 ms, 2345 ms, 1913 ms, 1969 ms, 1946 ms]">2.018 s
+					</td>
+					<td class="numeric more-detail">se: 142.12 ms
+					</td>
+					<td class="numeric max-value" title="median: 2024.500000 ms, min: 1892 ms, max: 2377 ms, se: 126.37 ms, values: [2095 ms, 2107 ms, 2140 ms, 2062 ms, 2377 ms, 2078 ms, 2045 ms, 2084 ms, 2024 ms, 2351 ms, 2008 ms, 1981 ms, 2004 ms, 2006 ms, 2245 ms, 2022 ms, 1950 ms, 2012 ms, 2050 ms, 2308 ms, 1945 ms, 1950 ms, 1988 ms, 2033 ms, 2279 ms, 1949 ms, 1908 ms, 2003 ms, 2038 ms, 2252 ms, 1977 ms, 1961 ms, 2080 ms, 1925 ms, 2274 ms, 2025 ms, 1966 ms, 1892 ms, 1916 ms, 2200 ms]">2.024 s
+					</td>
+					<td class="numeric more-detail">se: 126.37 ms
+					</td>
+					<td class="numeric">38.7%
+					</td>
+					<td class="numeric max-value">+6 ms (0.30%)
+					</td>
+					<td>5.4-20190313204516+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev95.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result2028821262">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20896017" target="_blank">2019-03-13 15:28:17
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/a0a1f75">a0a1f75
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/f91b061...a0a1f75">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1992.000000 ms, min: 1895 ms, max: 2435 ms, se: 129.02 ms, values: [2002 ms, 2435 ms, 2073 ms, 2102 ms, 2123 ms, 2096 ms, 2308 ms, 2012 ms, 1955 ms, 1920 ms, 1986 ms, 2239 ms, 1974 ms, 2103 ms, 1975 ms, 2054 ms, 2285 ms, 1934 ms, 1969 ms, 1952 ms, 1994 ms, 2279 ms, 2004 ms, 1990 ms, 1942 ms, 1941 ms, 2203 ms, 1953 ms, 1966 ms, 1982 ms, 2000 ms, 2181 ms, 2067 ms, 1938 ms, 1941 ms, 1977 ms, 2228 ms, 1895 ms, 1922 ms, 1903 ms]">1.992 s
+					</td>
+					<td class="numeric more-detail">se: 129.02 ms
+					</td>
+					<td class="numeric min-value" title="median: 1963.000000 ms, min: 1803 ms, max: 2360 ms, se: 127.10 ms, values: [2098 ms, 2360 ms, 2061 ms, 1981 ms, 2004 ms, 2103 ms, 2293 ms, 1987 ms, 2004 ms, 1983 ms, 1961 ms, 2236 ms, 1941 ms, 2009 ms, 1917 ms, 1964 ms, 2206 ms, 1972 ms, 1907 ms, 1962 ms, 1907 ms, 2186 ms, 1931 ms, 1949 ms, 1933 ms, 1873 ms, 2171 ms, 1908 ms, 1934 ms, 1803 ms, 1926 ms, 2233 ms, 2012 ms, 1940 ms, 1942 ms, 1898 ms, 2185 ms, 1900 ms, 1930 ms, 1903 ms]">1.963 s
+					</td>
+					<td class="numeric more-detail">se: 127.1 ms
+					</td>
+					<td class="numeric">90.5%
+					</td>
+					<td class="numeric min-value">-29 ms (-1.46%)
+					</td>
+					<td>5.4-20190313125514+0000
+					</td>
+					<td>Linux 4.15.0-46-generic amd64
+					</td>
+					<td>dev71.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result746908838">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20884881" target="_blank">2019-03-13 10:16:24
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/f91b061">f91b061
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/35a8e41...f91b061">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric min-value" title="median: 1973.000000 ms, min: 1901 ms, max: 2447 ms, se: 145.37 ms, values: [2447 ms, 2028 ms, 2119 ms, 2191 ms, 2047 ms, 2358 ms, 2052 ms, 2044 ms, 2010 ms, 2096 ms, 2218 ms, 1989 ms, 1964 ms, 1955 ms, 1934 ms, 2402 ms, 1970 ms, 1931 ms, 1963 ms, 2005 ms, 2239 ms, 1975 ms, 1988 ms, 1962 ms, 1971 ms, 2219 ms, 1963 ms, 1901 ms, 1906 ms, 1907 ms, 2187 ms, 1915 ms, 1934 ms, 1930 ms, 1917 ms, 2290 ms, 1942 ms, 1958 ms, 1901 ms, 1953 ms]">1.973 s
+					</td>
+					<td class="numeric more-detail">se: 145.37 ms
+					</td>
+					<td class="numeric max-value" title="median: 1994.500000 ms, min: 1861 ms, max: 2375 ms, se: 134.37 ms, values: [2357 ms, 2033 ms, 2123 ms, 2108 ms, 2007 ms, 2375 ms, 2064 ms, 2016 ms, 1935 ms, 1936 ms, 2298 ms, 1963 ms, 2008 ms, 2017 ms, 1998 ms, 2288 ms, 2010 ms, 1948 ms, 1959 ms, 1991 ms, 2227 ms, 1944 ms, 2002 ms, 1951 ms, 1929 ms, 2184 ms, 1888 ms, 1922 ms, 1957 ms, 1912 ms, 2221 ms, 1922 ms, 2084 ms, 1866 ms, 1961 ms, 2171 ms, 1894 ms, 1930 ms, 1861 ms, 1955 ms]">1.994 s
+					</td>
+					<td class="numeric more-detail">se: 134.37 ms
+					</td>
+					<td class="numeric">24.6%
+					</td>
+					<td class="numeric max-value">+21.5 ms (1.09%)
+					</td>
+					<td>5.4-20190313091903+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev78.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1058716934">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20876761" target="_blank">2019-03-13 05:53:59
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/35a8e41">35a8e41
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/02c5955...35a8e41">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1982.000000 ms, min: 1844 ms, max: 2380 ms, se: 131.02 ms, values: [2022 ms, 2380 ms, 2052 ms, 2068 ms, 2054 ms, 2078 ms, 2245 ms, 2040 ms, 2001 ms, 1979 ms, 1948 ms, 2309 ms, 1979 ms, 2034 ms, 1959 ms, 1948 ms, 2298 ms, 1959 ms, 1935 ms, 1958 ms, 1907 ms, 2231 ms, 1939 ms, 1904 ms, 2016 ms, 1984 ms, 2183 ms, 1890 ms, 1980 ms, 1911 ms, 1989 ms, 2262 ms, 1980 ms, 2068 ms, 1978 ms, 1844 ms, 2228 ms, 1917 ms, 1892 ms, 1929 ms]">1.982 s
+					</td>
+					<td class="numeric more-detail">se: 131.02 ms
+					</td>
+					<td class="numeric min-value" title="median: 1979.000000 ms, min: 1864 ms, max: 2324 ms, se: 126.59 ms, values: [2096 ms, 2308 ms, 2129 ms, 2012 ms, 1978 ms, 2063 ms, 2322 ms, 1987 ms, 2088 ms, 1964 ms, 2015 ms, 2324 ms, 1957 ms, 1996 ms, 2007 ms, 1951 ms, 2263 ms, 1864 ms, 1901 ms, 1943 ms, 1940 ms, 2188 ms, 1953 ms, 1914 ms, 1914 ms, 1943 ms, 2180 ms, 1950 ms, 1968 ms, 1940 ms, 1962 ms, 2236 ms, 1989 ms, 1951 ms, 1901 ms, 2033 ms, 2216 ms, 1980 ms, 1917 ms, 1936 ms]">1.979 s
+					</td>
+					<td class="numeric more-detail">se: 126.59 ms
+					</td>
+					<td class="numeric">12.6%
+					</td>
+					<td class="numeric min-value">-3 ms (-0.15%)
+					</td>
+					<td>5.4-20190313054752+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev70.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result45367452">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20873258" target="_blank">2019-03-13 02:51:43
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/02c5955">02c5955
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/bc4d6b1...02c5955">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 2027.500000 ms, min: 1863 ms, max: 2393 ms, se: 135.00 ms, values: [2134 ms, 2170 ms, 2393 ms, 2068 ms, 2007 ms, 2142 ms, 2058 ms, 2363 ms, 2017 ms, 1994 ms, 2053 ms, 2025 ms, 2269 ms, 2003 ms, 2063 ms, 2030 ms, 2091 ms, 2241 ms, 1947 ms, 2072 ms, 1982 ms, 2032 ms, 2338 ms, 1961 ms, 1976 ms, 1904 ms, 1964 ms, 2288 ms, 1974 ms, 2001 ms, 1957 ms, 1970 ms, 2256 ms, 2033 ms, 1886 ms, 1983 ms, 1931 ms, 2266 ms, 1863 ms, 1962 ms]">2.028 s
+					</td>
+					<td class="numeric more-detail">se: 135 ms
+					</td>
+					<td class="numeric min-value" title="median: 1980.000000 ms, min: 1878 ms, max: 2332 ms, se: 132.04 ms, values: [2052 ms, 2126 ms, 2316 ms, 1971 ms, 2096 ms, 2081 ms, 2076 ms, 2332 ms, 2070 ms, 2002 ms, 2005 ms, 2019 ms, 2298 ms, 1984 ms, 1970 ms, 1915 ms, 1996 ms, 2230 ms, 1938 ms, 1936 ms, 1937 ms, 1966 ms, 2238 ms, 1965 ms, 1889 ms, 1970 ms, 1928 ms, 2202 ms, 2015 ms, 1878 ms, 1918 ms, 1967 ms, 2270 ms, 1954 ms, 1910 ms, 1934 ms, 1920 ms, 2282 ms, 1976 ms, 1882 ms]">1.98 s
+					</td>
+					<td class="numeric more-detail">se: 132.04 ms
+					</td>
+					<td class="numeric">85.2%
+					</td>
+					<td class="numeric min-value">-47.5 ms (-2.34%)
+					</td>
+					<td>5.4-20190312234544+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev115.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1097972620">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20867881" target="_blank">2019-03-12 23:37:06
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/bc4d6b1">bc4d6b1
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/a9e624c...bc4d6b1">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1982.000000 ms, min: 1872 ms, max: 2287 ms, se: 130.23 ms, values: [2088 ms, 2234 ms, 2129 ms, 2041 ms, 2276 ms, 2081 ms, 2076 ms, 2078 ms, 1981 ms, 2287 ms, 1976 ms, 1914 ms, 1985 ms, 1975 ms, 2209 ms, 1967 ms, 1938 ms, 1999 ms, 1941 ms, 2267 ms, 1963 ms, 1958 ms, 1913 ms, 1962 ms, 2240 ms, 1872 ms, 1885 ms, 1926 ms, 1974 ms, 2260 ms, 2011 ms, 1983 ms, 1908 ms, 2010 ms, 2264 ms, 1939 ms, 1957 ms, 1935 ms, 1872 ms, 2263 ms]">1.982 s
+					</td>
+					<td class="numeric more-detail">se: 130.23 ms
+					</td>
+					<td class="numeric min-value" title="median: 1981.500000 ms, min: 1882 ms, max: 2381 ms, se: 135.06 ms, values: [2252 ms, 2381 ms, 2100 ms, 2102 ms, 1991 ms, 2078 ms, 2270 ms, 2040 ms, 1987 ms, 1982 ms, 2066 ms, 2270 ms, 1977 ms, 2003 ms, 1921 ms, 1964 ms, 2274 ms, 1965 ms, 1942 ms, 1977 ms, 1977 ms, 2241 ms, 1894 ms, 1953 ms, 1907 ms, 1910 ms, 2301 ms, 1919 ms, 2018 ms, 1997 ms, 1882 ms, 2179 ms, 1981 ms, 1970 ms, 1888 ms, 1957 ms, 2215 ms, 1930 ms, 1960 ms, 1896 ms]">1.982 s
+					</td>
+					<td class="numeric more-detail">se: 135.06 ms
+					</td>
+					<td class="numeric">2.7%
+					</td>
+					<td class="numeric min-value">-0.5 ms (-0.03%)
+					</td>
+					<td>5.4-20190312214214+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev72.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1698431944">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20857654" target="_blank">2019-03-12 19:12:59
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/a9e624c">a9e624c
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/a8080f5...a9e624c">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1995.500000 ms, min: 1887 ms, max: 2363 ms, se: 126.90 ms, values: [2103 ms, 2363 ms, 2066 ms, 2129 ms, 2047 ms, 2070 ms, 2310 ms, 2036 ms, 2088 ms, 1969 ms, 1966 ms, 2193 ms, 1957 ms, 2024 ms, 1985 ms, 1989 ms, 2278 ms, 1979 ms, 2003 ms, 2101 ms, 1917 ms, 2271 ms, 1957 ms, 1900 ms, 1949 ms, 1893 ms, 2198 ms, 1933 ms, 1991 ms, 1902 ms, 1941 ms, 2245 ms, 2060 ms, 1925 ms, 1946 ms, 1954 ms, 2225 ms, 2000 ms, 1887 ms, 1916 ms]">1.996 s
+					</td>
+					<td class="numeric more-detail">se: 126.9 ms
+					</td>
+					<td class="numeric min-value" title="median: 1973.000000 ms, min: 1872 ms, max: 2288 ms, se: 131.97 ms, values: [2216 ms, 2104 ms, 2059 ms, 2079 ms, 2277 ms, 2065 ms, 2014 ms, 2039 ms, 2040 ms, 2276 ms, 1953 ms, 1947 ms, 1926 ms, 1935 ms, 2271 ms, 2048 ms, 1973 ms, 1973 ms, 1948 ms, 2278 ms, 1907 ms, 1963 ms, 1972 ms, 1878 ms, 2283 ms, 1915 ms, 1910 ms, 1991 ms, 1876 ms, 2288 ms, 1965 ms, 1919 ms, 1939 ms, 1943 ms, 2183 ms, 1991 ms, 1888 ms, 1917 ms, 1872 ms, 2170 ms]">1.973 s
+					</td>
+					<td class="numeric more-detail">se: 131.97 ms
+					</td>
+					<td class="numeric">50.2%
+					</td>
+					<td class="numeric min-value">-22.5 ms (-1.13%)
+					</td>
+					<td>5.4-20190312132347+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev106.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result938195437">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20851236" target="_blank">2019-03-12 14:50:00
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/a8080f5">a8080f5
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/cca6653...a8080f5">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric min-value" title="median: 1960.500000 ms, min: 1862 ms, max: 2430 ms, se: 141.32 ms, values: [2222 ms, 2430 ms, 2079 ms, 2073 ms, 1998 ms, 2063 ms, 2295 ms, 2021 ms, 1987 ms, 1961 ms, 1976 ms, 2226 ms, 1948 ms, 1913 ms, 1962 ms, 1899 ms, 2251 ms, 1929 ms, 1915 ms, 1925 ms, 1917 ms, 2214 ms, 1887 ms, 1903 ms, 1960 ms, 1904 ms, 2241 ms, 1905 ms, 1933 ms, 1951 ms, 1889 ms, 2236 ms, 2012 ms, 1913 ms, 1922 ms, 1954 ms, 2234 ms, 1965 ms, 1862 ms, 1941 ms]">1.96 s
+					</td>
+					<td class="numeric more-detail">se: 141.32 ms
+					</td>
+					<td class="numeric max-value" title="median: 1981.500000 ms, min: 1861 ms, max: 2328 ms, se: 127.14 ms, values: [2084 ms, 2328 ms, 2020 ms, 2058 ms, 2029 ms, 2032 ms, 2290 ms, 2064 ms, 2043 ms, 1982 ms, 1946 ms, 2229 ms, 1969 ms, 1995 ms, 1942 ms, 2012 ms, 2276 ms, 1956 ms, 1940 ms, 1948 ms, 1985 ms, 2257 ms, 1928 ms, 1940 ms, 1917 ms, 1911 ms, 2219 ms, 1956 ms, 1981 ms, 1917 ms, 1986 ms, 2236 ms, 1875 ms, 1975 ms, 1861 ms, 1904 ms, 2178 ms, 1871 ms, 1908 ms, 1922 ms]">1.982 s
+					</td>
+					<td class="numeric more-detail">se: 127.14 ms
+					</td>
+					<td class="numeric">44.6%
+					</td>
+					<td class="numeric max-value">+21 ms (1.07%)
+					</td>
+					<td>5.4-20190312131948+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev65.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result2023074449">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20837342" target="_blank">2019-03-12 03:43:32
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/cca6653">cca6653
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/0adc13d...cca6653">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1982.500000 ms, min: 1878 ms, max: 2378 ms, se: 125.14 ms, values: [2056 ms, 2378 ms, 2090 ms, 2027 ms, 1954 ms, 2151 ms, 2286 ms, 2068 ms, 1993 ms, 2007 ms, 1980 ms, 2185 ms, 1947 ms, 1986 ms, 1971 ms, 2024 ms, 2221 ms, 1878 ms, 1916 ms, 1976 ms, 1973 ms, 2266 ms, 1959 ms, 1937 ms, 1945 ms, 1898 ms, 2258 ms, 1953 ms, 1946 ms, 2000 ms, 1985 ms, 2197 ms, 2017 ms, 1929 ms, 1935 ms, 1938 ms, 2209 ms, 1902 ms, 1880 ms, 1956 ms]">1.982 s
+					</td>
+					<td class="numeric more-detail">se: 125.14 ms
+					</td>
+					<td class="numeric min-value" title="median: 1978.000000 ms, min: 1875 ms, max: 2386 ms, se: 128.31 ms, values: [2131 ms, 2268 ms, 1993 ms, 2044 ms, 2028 ms, 2047 ms, 2386 ms, 1978 ms, 2016 ms, 1970 ms, 1971 ms, 2260 ms, 1929 ms, 1935 ms, 1952 ms, 1884 ms, 2241 ms, 1909 ms, 1928 ms, 1948 ms, 1902 ms, 2219 ms, 1902 ms, 1963 ms, 1954 ms, 1875 ms, 2244 ms, 1953 ms, 1978 ms, 1961 ms, 2017 ms, 2243 ms, 2033 ms, 1981 ms, 2003 ms, 1939 ms, 2242 ms, 1943 ms, 1955 ms, 2046 ms]">1.978 s
+					</td>
+					<td class="numeric more-detail">se: 128.31 ms
+					</td>
+					<td class="numeric">2.7%
+					</td>
+					<td class="numeric min-value">-4.5 ms (-0.23%)
+					</td>
+					<td>5.4-20190312013851+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev36.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result211179652">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20828065" target="_blank">2019-03-11 22:56:08
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/0adc13d">0adc13d
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/7d34372...0adc13d">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1977.500000 ms, min: 1863 ms, max: 2411 ms, se: 132.17 ms, values: [2116 ms, 2269 ms, 2025 ms, 1953 ms, 2032 ms, 2071 ms, 2411 ms, 2090 ms, 1933 ms, 1988 ms, 1939 ms, 2289 ms, 1978 ms, 1972 ms, 1937 ms, 2001 ms, 2214 ms, 1972 ms, 1946 ms, 1952 ms, 1947 ms, 2291 ms, 1923 ms, 1978 ms, 1977 ms, 1982 ms, 2217 ms, 1863 ms, 1986 ms, 1898 ms, 1891 ms, 2163 ms, 1988 ms, 1899 ms, 1887 ms, 1910 ms, 2176 ms, 1928 ms, 1902 ms, 1912 ms]">1.978 s
+					</td>
+					<td class="numeric more-detail">se: 132.17 ms
+					</td>
+					<td class="numeric min-value" title="median: 1937.500000 ms, min: 1858 ms, max: 2279 ms, se: 128.24 ms, values: [2057 ms, 2279 ms, 2053 ms, 2072 ms, 2070 ms, 2104 ms, 2246 ms, 2000 ms, 1992 ms, 1955 ms, 1960 ms, 2249 ms, 1923 ms, 1933 ms, 1943 ms, 1928 ms, 2264 ms, 1936 ms, 1918 ms, 1911 ms, 1870 ms, 2184 ms, 1905 ms, 1860 ms, 1929 ms, 1924 ms, 2185 ms, 1866 ms, 1939 ms, 1921 ms, 1864 ms, 2207 ms, 2041 ms, 1858 ms, 1889 ms, 1928 ms, 2193 ms, 1887 ms, 1904 ms, 1914 ms]">1.938 s
+					</td>
+					<td class="numeric more-detail">se: 128.24 ms
+					</td>
+					<td class="numeric">72.3%
+					</td>
+					<td class="numeric min-value">-40 ms (-2.02%)
+					</td>
+					<td>5.4-20190311213011+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev66.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result508330992">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20822368" target="_blank">2019-03-11 16:58:28
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/7d34372">7d34372
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/c49b44c...7d34372">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1976.500000 ms, min: 1878 ms, max: 2440 ms, se: 132.58 ms, values: [2113 ms, 2440 ms, 2092 ms, 1994 ms, 2075 ms, 2069 ms, 2321 ms, 2055 ms, 2028 ms, 1980 ms, 1958 ms, 2235 ms, 1989 ms, 1955 ms, 1933 ms, 1973 ms, 2229 ms, 1935 ms, 1939 ms, 1927 ms, 1968 ms, 2201 ms, 1891 ms, 1925 ms, 2007 ms, 1882 ms, 2254 ms, 1942 ms, 1926 ms, 1944 ms, 1966 ms, 2200 ms, 1951 ms, 2006 ms, 1924 ms, 2036 ms, 2229 ms, 1945 ms, 1878 ms, 1912 ms]">1.976 s
+					</td>
+					<td class="numeric more-detail">se: 132.58 ms
+					</td>
+					<td class="numeric min-value" title="median: 1966.500000 ms, min: 1867 ms, max: 2353 ms, se: 129.24 ms, values: [2007 ms, 2082 ms, 2059 ms, 2022 ms, 2353 ms, 1999 ms, 1978 ms, 2062 ms, 2055 ms, 2266 ms, 1963 ms, 2009 ms, 2002 ms, 1974 ms, 2238 ms, 1937 ms, 1953 ms, 1929 ms, 1949 ms, 2243 ms, 1897 ms, 1923 ms, 1870 ms, 1903 ms, 2283 ms, 1931 ms, 1932 ms, 1959 ms, 1867 ms, 2212 ms, 1946 ms, 1920 ms, 1906 ms, 1970 ms, 2217 ms, 1904 ms, 1874 ms, 1924 ms, 1911 ms, 2175 ms]">1.966 s
+					</td>
+					<td class="numeric more-detail">se: 129.24 ms
+					</td>
+					<td class="numeric">55.6%
+					</td>
+					<td class="numeric min-value">-10 ms (-0.51%)
+					</td>
+					<td>5.4-20190311151537+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev28.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1378297277">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20816488" target="_blank">2019-03-11 13:48:14
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/c49b44c">c49b44c
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/c045ad8...c49b44c">changes
+						</a>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric min-value" title="median: 1996.500000 ms, min: 1884 ms, max: 2384 ms, se: 127.09 ms, values: [2040 ms, 2024 ms, 2100 ms, 2068 ms, 2384 ms, 2034 ms, 2071 ms, 2061 ms, 2066 ms, 2221 ms, 2032 ms, 1984 ms, 1970 ms, 1956 ms, 2253 ms, 1986 ms, 1958 ms, 1918 ms, 1951 ms, 2303 ms, 1894 ms, 1911 ms, 1952 ms, 1918 ms, 2266 ms, 1962 ms, 1963 ms, 1943 ms, 2007 ms, 2282 ms, 1915 ms, 1921 ms, 1971 ms, 2021 ms, 2147 ms, 1962 ms, 1884 ms, 1910 ms, 2017 ms, 2239 ms]">1.996 s
+					</td>
+					<td class="numeric more-detail">se: 127.09 ms
+					</td>
+					<td class="numeric max-value" title="median: 1997.500000 ms, min: 1848 ms, max: 2353 ms, se: 127.22 ms, values: [2011 ms, 2353 ms, 2103 ms, 2068 ms, 2022 ms, 2093 ms, 2269 ms, 2064 ms, 2131 ms, 2025 ms, 2014 ms, 2162 ms, 1970 ms, 2017 ms, 1978 ms, 1990 ms, 2256 ms, 1935 ms, 1946 ms, 1962 ms, 1936 ms, 2251 ms, 1924 ms, 1902 ms, 1919 ms, 1969 ms, 2204 ms, 1970 ms, 1983 ms, 1941 ms, 1942 ms, 2338 ms, 1962 ms, 1848 ms, 2005 ms, 2007 ms, 2259 ms, 1926 ms, 1903 ms, 1980 ms]">1.998 s
+					</td>
+					<td class="numeric more-detail">se: 127.22 ms
+					</td>
+					<td class="numeric">8.0%
+					</td>
+					<td class="numeric max-value">+1 ms (0.05%)
+					</td>
+					<td>5.4-20190311133009+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev110.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1461354573">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20815285" target="_blank">2019-03-11 12:43:02
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/c045ad8">c045ad8
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/c045ad8...c045ad8">changes
+						</a>
+					</td>
+					<td class="numeric min-value" title="median: 1813.000000 ms, min: 1752 ms, max: 2170 ms, se: 105.31 ms, values: [1955 ms, 1975 ms, 1943 ms, 1905 ms, 2170 ms, 1910 ms, 1875 ms, 1959 ms, 1764 ms, 1875 ms, 2091 ms, 1802 ms, 1799 ms, 1811 ms, 1847 ms, 1866 ms, 2034 ms, 1806 ms, 1803 ms, 1812 ms, 1757 ms, 1776 ms, 2055 ms, 1809 ms, 1846 ms, 1806 ms, 1785 ms, 1752 ms, 2055 ms, 1763 ms, 1815 ms, 1785 ms, 1826 ms, 1806 ms, 2022 ms, 1803 ms, 1764 ms, 1788 ms, 1814 ms, 1762 ms]">1.813 s
+					</td>
+					<td class="numeric more-detail">se: 105.31 ms
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1977.000000 ms, min: 1885 ms, max: 2647 ms, se: 165.51 ms, values: [2235 ms, 2390 ms, 2647 ms, 1994 ms, 2053 ms, 2138 ms, 2333 ms, 2094 ms, 2055 ms, 1995 ms, 1981 ms, 2211 ms, 1982 ms, 2047 ms, 1896 ms, 1973 ms, 2233 ms, 1929 ms, 1914 ms, 1963 ms, 1924 ms, 2246 ms, 1962 ms, 1953 ms, 1948 ms, 1898 ms, 2174 ms, 1911 ms, 1902 ms, 1939 ms, 1912 ms, 2248 ms, 1963 ms, 1954 ms, 1932 ms, 1901 ms, 2230 ms, 1885 ms, 1973 ms, 1987 ms]">1.977 s
+					</td>
+					<td class="numeric more-detail">se: 165.51 ms
+					</td>
+					<td class="numeric">100.0%
+					</td>
+					<td class="numeric max-value">+164 ms (9.05%)
+					</td>
+					<td>5.4-20190311112412+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev38.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1461354573">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20815285" target="_blank">2019-03-11 12:36:43
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/c045ad8">c045ad8
+						</a> 
+						<a class="compare-link" href="https://github.com/gradle/gradle/compare/c045ad8...c045ad8">changes
+						</a>
+					</td>
+					<td class="numeric min-value" title="median: 1844.000000 ms, min: 1703 ms, max: 2184 ms, se: 112.24 ms, values: [2007 ms, 1997 ms, 1932 ms, 2184 ms, 2059 ms, 1901 ms, 1886 ms, 1844 ms, 1833 ms, 2101 ms, 1825 ms, 1830 ms, 1867 ms, 1880 ms, 1906 ms, 2034 ms, 1777 ms, 1844 ms, 1833 ms, 1845 ms, 1781 ms, 2082 ms, 1826 ms, 1774 ms, 1837 ms, 1802 ms, 1703 ms, 2075 ms, 1855 ms, 1790 ms, 1812 ms, 1800 ms, 1882 ms, 2019 ms, 1809 ms, 1813 ms, 1747 ms, 1789 ms, 1791 ms, 2039 ms]">1.844 s
+					</td>
+					<td class="numeric more-detail">se: 112.24 ms
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1974.000000 ms, min: 1883 ms, max: 2361 ms, se: 126.69 ms, values: [2047 ms, 2361 ms, 2069 ms, 2090 ms, 1999 ms, 2084 ms, 2322 ms, 2028 ms, 1912 ms, 2035 ms, 2135 ms, 2232 ms, 1980 ms, 1951 ms, 2111 ms, 1967 ms, 2217 ms, 1883 ms, 1939 ms, 1940 ms, 1965 ms, 2211 ms, 1958 ms, 1968 ms, 1916 ms, 1924 ms, 2162 ms, 1985 ms, 1930 ms, 1888 ms, 1914 ms, 2231 ms, 1954 ms, 1987 ms, 1909 ms, 1883 ms, 2180 ms, 1921 ms, 1912 ms, 1908 ms]">1.974 s
+					</td>
+					<td class="numeric more-detail">se: 126.69 ms
+					</td>
+					<td class="numeric">100.0%
+					</td>
+					<td class="numeric max-value">+130 ms (7.05%)
+					</td>
+					<td>5.4-20190311112412+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev38.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+				<tr id="result1461354573">
+					<td>
+						<a href="https://builds.gradle.org/viewLog.html?buildId=20815285" target="_blank">2019-03-11 12:30:21
+						</a>
+					</td>
+					<td>master
+					</td>
+					<td>
+						<a class="commit-link" href="https://github.com/gradle/gradle/commit/c045ad8">c045ad8
+						</a>
+					</td>
+					<td class="numeric min-value" title="median: 1844.500000 ms, min: 1752 ms, max: 2245 ms, se: 117.80 ms, values: [1950 ms, 1945 ms, 1947 ms, 2245 ms, 1958 ms, 1863 ms, 1922 ms, 1916 ms, 1842 ms, 2144 ms, 1852 ms, 1843 ms, 1910 ms, 1813 ms, 1789 ms, 2109 ms, 1804 ms, 1822 ms, 1752 ms, 1834 ms, 1846 ms, 2100 ms, 1787 ms, 1834 ms, 1786 ms, 1834 ms, 1780 ms, 2045 ms, 1849 ms, 1800 ms, 1791 ms, 1818 ms, 1860 ms, 2067 ms, 1765 ms, 1919 ms, 1796 ms, 1770 ms, 1803 ms, 2060 ms]">1.844 s
+					</td>
+					<td class="numeric more-detail">se: 117.8 ms
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td class="numeric max-value" title="median: 1954.500000 ms, min: 1842 ms, max: 2418 ms, se: 133.65 ms, values: [2284 ms, 2039 ms, 2031 ms, 2036 ms, 1988 ms, 2418 ms, 2052 ms, 2013 ms, 1938 ms, 1946 ms, 2260 ms, 1969 ms, 2014 ms, 1942 ms, 1920 ms, 2245 ms, 1877 ms, 1936 ms, 1877 ms, 1941 ms, 2231 ms, 1842 ms, 1887 ms, 1973 ms, 1931 ms, 2227 ms, 1910 ms, 1907 ms, 1954 ms, 1896 ms, 2187 ms, 1926 ms, 1955 ms, 1936 ms, 1934 ms, 2163 ms, 2005 ms, 1951 ms, 1883 ms, 1961 ms]">1.954 s
+					</td>
+					<td class="numeric more-detail">se: 133.65 ms
+					</td>
+					<td class="numeric">100.0%
+					</td>
+					<td class="numeric max-value">+110 ms (5.96%)
+					</td>
+					<td>5.4-20190311112412+0000
+					</td>
+					<td>Linux 4.15.0-45-generic amd64
+					</td>
+					<td>dev38.gradle.org
+					</td>
+					<td>1.8.0_181 (Oracle Corporation 25.181-b13)
+					</td>
+					<td>santaTrackerAndroidBuild
+					</td>
+					<td>assembleDebug
+					</td>
+					<td>
+						<span class="empty">-
+						</span>
+					</td>
+					<td>-Dorg.gradle.parallel=true
+					</td>
+					<td>-Xms1g -Xmx1g
+					</td>
+					<td>yes
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer">Generated at 2019-03-14 23:08:37 by Gradle 5.4-20190314211705+0000
+		</div>
+	</body>
+</html>

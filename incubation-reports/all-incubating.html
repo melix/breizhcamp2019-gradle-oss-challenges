@@ -1,0 +1,1162 @@
+<html lang="en">
+    <head>
+       <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <title>Incubating APIs</title>
+       <link xmlns:xslthl="http://xslthl.sf.net" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700">
+       <meta xmlns:xslthl="http://xslthl.sf.net" content="width=device-width, initial-scale=1" name="viewport">
+       <link xmlns:xslthl="http://xslthl.sf.net" type="text/css" rel="stylesheet" href="https://docs.gradle.org/current/userguide/base.css">
+
+    </head>
+    <body>
+       <h1>Incubating APIs</h1>
+       <h2>Index</h2>
+       <ul>
+    
+<li><a href="#2.0">Incubating since 2.0</a><br></li>
+<li><a href="#2.10">Incubating since 2.10</a><br></li>
+<li><a href="#2.11">Incubating since 2.11</a><br></li>
+<li><a href="#2.6">Incubating since 2.6</a><br></li>
+<li><a href="#3.4">Incubating since 3.4</a><br></li>
+<li><a href="#4.0">Incubating since 4.0</a><br></li>
+<li><a href="#4.1">Incubating since 4.1</a><br></li>
+<li><a href="#4.10">Incubating since 4.10</a><br></li>
+<li><a href="#4.2">Incubating since 4.2</a><br></li>
+<li><a href="#4.3">Incubating since 4.3</a><br></li>
+<li><a href="#4.4">Incubating since 4.4</a><br></li>
+<li><a href="#4.5">Incubating since 4.5</a><br></li>
+<li><a href="#4.6">Incubating since 4.6</a><br></li>
+<li><a href="#4.7">Incubating since 4.7</a><br></li>
+<li><a href="#4.7.">Incubating since 4.7.</a><br></li>
+<li><a href="#4.8">Incubating since 4.8</a><br></li>
+<li><a href="#4.9">Incubating since 4.9</a><br></li>
+<li><a href="#5.0">Incubating since 5.0</a><br></li>
+<li><a href="#5.1">Incubating since 5.1</a><br></li>
+<li><a href="#5.2">Incubating since 5.2</a><br></li>
+<li><a href="#5.3">Incubating since 5.3</a><br></li>
+<li><a href="#Not found">Incubating since Not found</a><br></li>
+</ul>
+<a name="2.0"></a>
+<h2>Incubating since 2.0</h2>
+<h3>In languageJava</h3>
+<ul>
+   <li>org.gradle.language.java.artifact.JavadocArtifact</li>
+</ul>
+<h3>In platformBase</h3>
+<ul>
+   <li>org.gradle.language.base.artifact.SourcesArtifact</li>
+</ul>
+<a name="2.10"></a>
+<h2>Incubating since 2.10</h2>
+<h3>In platformJvm</h3>
+<ul>
+   <li>org.gradle.jvm.JvmApiSpec</li>
+   <li>org.gradle.jvm.tasks.api.ApiJar</li>
+</ul>
+<a name="2.11"></a>
+<h2>Incubating since 2.11</h2>
+<h3>In testingJvm</h3>
+<ul>
+   <li>org.gradle.jvm.plugins.JUnitTestSuitePlugin</li>
+</ul>
+<a name="2.6"></a>
+<h2>Incubating since 2.6</h2>
+<h3>In platformBase</h3>
+<ul>
+   <li>org.gradle.platform.base.Variant</li>
+</ul>
+<a name="3.4"></a>
+<h2>Incubating since 3.4</h2>
+<h3>In languageJava</h3>
+<ul>
+   <li>org.gradle.language.java.plugins.JavaLanguagePlugin</li>
+</ul>
+<a name="4.0"></a>
+<h2>Incubating since 4.0</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>ArtifactTypeDefinition</li>
+   <li>Usage</li>
+   <li>org.gradle.api.ActionConfiguration</li>
+   <li>org.gradle.api.Project.getObjects()</li>
+   <li>org.gradle.api.Project.getProviders()</li>
+   <li>org.gradle.api.Project.provider(java.util.concurrent.Callable&lt;T&gt;)</li>
+   <li>org.gradle.api.Script.provider(java.util.concurrent.Callable&lt;T&gt;)</li>
+   <li>org.gradle.api.artifacts.ArtifactCollection.getFailures()</li>
+   <li>org.gradle.api.artifacts.ArtifactView.ViewConfiguration</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataBuilder</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataSupplier</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataSupplierDetails</li>
+   <li>org.gradle.api.artifacts.ModuleDependency.setTargetConfiguration(java.lang.String)</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler.getArtifactTypes()</li>
+   <li>org.gradle.api.artifacts.repositories.IvyArtifactRepository</li>
+   <li>org.gradle.api.artifacts.repositories.IvyArtifactRepository.setMetadataSupplier(java.lang.Class&lt;? extends org.gradle.api.artifacts.ComponentMetadataSupplier&gt;)</li>
+   <li>org.gradle.api.artifacts.repositories.RepositoryResourceAccessor</li>
+   <li>org.gradle.api.artifacts.type.ArtifactTypeContainer</li>
+   <li>org.gradle.api.artifacts.type.ArtifactTypeDefinition</li>
+   <li>org.gradle.api.attributes.AttributeCompatibilityRule</li>
+   <li>org.gradle.api.attributes.AttributeDisambiguationRule</li>
+   <li>org.gradle.api.attributes.CompatibilityRuleChain</li>
+   <li>org.gradle.api.attributes.CompatibilityRuleChain.add(java.lang.Class&lt;? extends org.gradle.api.attributes.AttributeCompatibilityRule&lt;T&gt;&gt;)</li>
+   <li>org.gradle.api.attributes.DisambiguationRuleChain</li>
+   <li>org.gradle.api.attributes.DisambiguationRuleChain.add(java.lang.Class&lt;? extends org.gradle.api.attributes.AttributeDisambiguationRule&lt;T&gt;&gt;)</li>
+   <li>org.gradle.api.file.SourceDirectorySet</li>
+   <li>org.gradle.api.file.SourceDirectorySet.getOutputDir()</li>
+   <li>org.gradle.api.model.ObjectFactory</li>
+   <li>org.gradle.api.plugins.ExtensionContainer</li>
+   <li>org.gradle.api.provider.ProviderFactory</li>
+   <li>org.gradle.scripts.ScriptingLanguage</li>
+</ul>
+<h3>In ide</h3>
+<ul>
+   <li>org.gradle.plugins.ide.idea.model.Project.addModulePath(java.io.File)</li>
+</ul>
+<h3>In jacoco</h3>
+<ul>
+   <li>org.gradle.testing.jacoco.plugins.JacocoPluginExtension</li>
+   <li>org.gradle.testing.jacoco.plugins.JacocoTaskExtension</li>
+   <li>org.gradle.testing.jacoco.tasks.JacocoMerge</li>
+</ul>
+<h3>In reporting</h3>
+<ul>
+   <li>org.gradle.api.reporting.ConfigurableReport</li>
+   <li>org.gradle.api.reporting.ConfigurableReport.setDestination(java.io.File)</li>
+   <li>org.gradle.api.reporting.ConfigurableReport.setEnabled(boolean)</li>
+</ul>
+<h3>In workers</h3>
+<ul>
+   <li>org.gradle.workers.IsolationMode</li>
+</ul>
+<a name="4.1"></a>
+<h2>Incubating since 4.1</h2>
+<h3>In baseServices</h3>
+<ul>
+   <li>org.gradle.concurrent.ParallelismConfiguration</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>Usage</li>
+   <li>org.gradle.api.Project.getLayout()</li>
+   <li>org.gradle.api.attributes.MultipleCandidatesDetails.getConsumerValue()</li>
+   <li>org.gradle.api.file.Directory</li>
+   <li>org.gradle.api.file.ProjectLayout</li>
+   <li>org.gradle.api.file.RegularFile</li>
+</ul>
+<h3>In languageNative</h3>
+<ul>
+   <li>org.gradle.language.cpp.plugins.CppBasePlugin</li>
+   <li>org.gradle.language.cpp.plugins.CppLibraryPlugin</li>
+   <li>org.gradle.language.swift.plugins.SwiftBasePlugin</li>
+   <li>org.gradle.language.swift.tasks.SwiftCompile</li>
+</ul>
+<h3>In platformNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.toolchain.Swiftc</li>
+   <li>org.gradle.nativeplatform.toolchain.SwiftcPlatformToolChain</li>
+   <li>org.gradle.nativeplatform.toolchain.plugins.SwiftCompilerPlugin</li>
+</ul>
+<a name="4.10"></a>
+<h2>Incubating since 4.10</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.Project</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataDetails.belongsTo(java.lang.Object)</li>
+   <li>org.gradle.api.credentials.HttpHeaderCredentials</li>
+   <li>org.gradle.vcs.VersionControlRepository</li>
+</ul>
+<h3>In languageJava</h3>
+<ul>
+   <li>org.gradle.api.tasks.compile.CompileOptions.getHeaderOutputDirectory()</li>
+</ul>
+<h3>In pluginDevelopment</h3>
+<ul>
+   <li>org.gradle.plugin.devel.PluginDeclaration</li>
+   <li>org.gradle.plugin.devel.PluginDeclaration.getDescription()</li>
+   <li>org.gradle.plugin.devel.PluginDeclaration.getDisplayName()</li>
+</ul>
+<h3>In plugins</h3>
+<ul>
+   <li>org.gradle.api.plugins.JavaApplication</li>
+   <li>org.gradle.api.plugins.JavaPluginExtension</li>
+</ul>
+<h3>In resourcesHttp</h3>
+<ul>
+   <li>org.gradle.authentication.http.HttpHeaderAuthentication</li>
+</ul>
+<h3>In toolingApi</h3>
+<ul>
+   <li>org.gradle.tooling.model.cpp.CompilationDetails</li>
+   <li>org.gradle.tooling.model.cpp.CppApplication</li>
+   <li>org.gradle.tooling.model.cpp.CppBinary</li>
+   <li>org.gradle.tooling.model.cpp.CppComponent</li>
+   <li>org.gradle.tooling.model.cpp.CppExecutable</li>
+   <li>org.gradle.tooling.model.cpp.CppLibrary</li>
+   <li>org.gradle.tooling.model.cpp.CppProject</li>
+   <li>org.gradle.tooling.model.cpp.CppSharedLibrary</li>
+   <li>org.gradle.tooling.model.cpp.CppStaticLibrary</li>
+   <li>org.gradle.tooling.model.cpp.CppTestSuite</li>
+   <li>org.gradle.tooling.model.cpp.LinkageDetails</li>
+   <li>org.gradle.tooling.model.cpp.MacroDirective</li>
+   <li>org.gradle.tooling.model.cpp.SourceFile</li>
+   <li>org.gradle.tooling.model.gradle.GradleBuild.getEditableBuilds()</li>
+</ul>
+<a name="4.2"></a>
+<h2>Incubating since 4.2</h2>
+<h3>In baseServices</h3>
+<ul>
+   <li>org.gradle.api.reflect.ObjectInstantiationException</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.Task</li>
+   <li>org.gradle.api.file.FileSystemLocation</li>
+</ul>
+<h3>In ideNative</h3>
+<ul>
+   <li>org.gradle.ide.xcode.XcodeExtension</li>
+   <li>org.gradle.ide.xcode.XcodeProject</li>
+   <li>org.gradle.ide.xcode.plugins.XcodePlugin</li>
+   <li>org.gradle.ide.xcode.tasks.GenerateSchemeFileTask</li>
+   <li>org.gradle.ide.xcode.tasks.GenerateWorkspaceSettingsFileTask</li>
+   <li>org.gradle.ide.xcode.tasks.GenerateXcodeProjectFileTask</li>
+   <li>org.gradle.ide.xcode.tasks.GenerateXcodeWorkspaceFileTask</li>
+</ul>
+<h3>In languageNative</h3>
+<ul>
+   <li>org.gradle.language.cpp.CppApplication</li>
+   <li>org.gradle.language.cpp.CppBinary</li>
+   <li>org.gradle.language.cpp.CppComponent</li>
+   <li>org.gradle.language.cpp.CppExecutable</li>
+   <li>org.gradle.language.cpp.CppLibrary</li>
+   <li>org.gradle.language.cpp.CppSharedLibrary</li>
+   <li>org.gradle.language.swift.SwiftApplication</li>
+   <li>org.gradle.language.swift.SwiftBinary</li>
+   <li>org.gradle.language.swift.SwiftComponent</li>
+   <li>org.gradle.language.swift.SwiftExecutable</li>
+   <li>org.gradle.language.swift.SwiftLibrary</li>
+   <li>org.gradle.language.swift.SwiftSharedLibrary</li>
+   <li>org.gradle.language.swift.plugins.SwiftLibraryPlugin</li>
+</ul>
+<h3>In platformPlay</h3>
+<ul>
+   <li>org.gradle.language.twirl.TwirlTemplateFormat</li>
+</ul>
+<h3>In testingNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.test.NativeTestSuiteBinarySpec</li>
+   <li>org.gradle.nativeplatform.test.NativeTestSuiteSpec</li>
+   <li>org.gradle.nativeplatform.test.xctest.SwiftXCTestSuite</li>
+   <li>org.gradle.nativeplatform.test.xctest.plugins.XCTestConventionPlugin</li>
+</ul>
+<a name="4.3"></a>
+<h2>Incubating since 4.3</h2>
+<h3>In baseServicesGroovy</h3>
+<ul>
+   <li>org.gradle.api.specs.AndSpec</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.component.ComponentWithVariants</li>
+   <li>org.gradle.api.file.DirectoryProperty</li>
+   <li>org.gradle.api.file.RegularFileProperty</li>
+   <li>org.gradle.api.provider.ListProperty</li>
+   <li>org.gradle.api.provider.Property</li>
+</ul>
+<h3>In languageJava</h3>
+<ul>
+   <li>org.gradle.api.tasks.compile.CompileOptions</li>
+   <li>org.gradle.api.tasks.compile.CompileOptions.getAnnotationProcessorGeneratedSourcesDirectory()</li>
+</ul>
+<h3>In logging</h3>
+<ul>
+   <li>Verbose</li>
+</ul>
+<h3>In platformNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.tasks.LinkMachOBundle</li>
+</ul>
+<h3>In publish</h3>
+<ul>
+   <li>org.gradle.api.publish.tasks.GenerateModuleMetadata</li>
+</ul>
+<a name="4.4"></a>
+<h2>Incubating since 4.4</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.artifacts.ComponentMetadataDetails</li>
+   <li>org.gradle.api.artifacts.Configuration</li>
+   <li>org.gradle.api.artifacts.DependenciesMetadata</li>
+   <li>org.gradle.api.artifacts.ExternalDependency</li>
+   <li>org.gradle.api.artifacts.ExternalDependency.getVersionConstraint()</li>
+   <li>org.gradle.api.artifacts.MutableVersionConstraint</li>
+   <li>org.gradle.api.artifacts.VariantMetadata</li>
+   <li>org.gradle.api.artifacts.VersionConstraint</li>
+   <li>org.gradle.api.artifacts.component.ModuleComponentSelector.getVersionConstraint()</li>
+   <li>org.gradle.api.artifacts.dsl.RepositoryHandler.gradlePluginPortal()</li>
+   <li>org.gradle.api.initialization.Settings</li>
+   <li>org.gradle.api.initialization.Settings.getBuildscript()</li>
+   <li>org.gradle.api.initialization.Settings.getSourceControl()</li>
+   <li>org.gradle.tooling.provider.model.ParameterizedToolingModelBuilder</li>
+   <li>org.gradle.vcs.SourceControl</li>
+   <li>org.gradle.vcs.VcsMapping</li>
+   <li>org.gradle.vcs.VcsMappings</li>
+   <li>org.gradle.vcs.VersionControlSpec</li>
+</ul>
+<h3>In languageNative</h3>
+<ul>
+   <li>org.gradle.language.swift.tasks.UnexportMainSymbol</li>
+</ul>
+<h3>In platformBase</h3>
+<ul>
+   <li>org.gradle.language.base.compile.CompilerVersion</li>
+</ul>
+<h3>In reporting</h3>
+<ul>
+   <li>org.gradle.api.reporting.ReportingExtension.getBaseDirectory()</li>
+</ul>
+<h3>In testingBase</h3>
+<ul>
+   <li>org.gradle.api.tasks.testing.AbstractTestTask.createTestExecuter()</li>
+   <li>org.gradle.api.tasks.testing.AbstractTestTask.createTestExecutionSpec()</li>
+   <li>org.gradle.api.tasks.testing.AbstractTestTask.getBinaryResultsDirectory()</li>
+   <li>org.gradle.testing.base.plugins.TestingBasePlugin</li>
+</ul>
+<h3>In testingNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.test.cpp.CppTestSuite</li>
+   <li>org.gradle.nativeplatform.test.cpp.plugins.CppUnitTestPlugin</li>
+   <li>org.gradle.nativeplatform.test.xctest.SwiftXCTestBinary</li>
+   <li>org.gradle.nativeplatform.test.xctest.tasks.InstallXCTestBundle</li>
+</ul>
+<h3>In versionControl</h3>
+<ul>
+   <li>org.gradle.vcs.git.GitVersionControlSpec</li>
+   <li>org.gradle.vcs.internal.VersionRef</li>
+</ul>
+<a name="4.5"></a>
+<h2>Incubating since 4.5</h2>
+<h3>In buildInit</h3>
+<ul>
+   <li>org.gradle.api.tasks.wrapper.Wrapper</li>
+   <li>org.gradle.api.tasks.wrapper.Wrapper.getDistributionSha256Sum()</li>
+   <li>org.gradle.buildinit.tasks.InitBuild</li>
+   <li>org.gradle.buildinit.tasks.InitBuild.getAvailableDSLs()</li>
+   <li>org.gradle.buildinit.tasks.InitBuild.getDsl()</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.artifacts.ComponentMetadataDetails</li>
+   <li>org.gradle.api.artifacts.ComponentModuleMetadataDetails.replacedBy(java.lang.Object, java.lang.String)</li>
+   <li>org.gradle.api.artifacts.DependencyConstraint</li>
+   <li>org.gradle.api.artifacts.DependencyConstraintMetadata</li>
+   <li>org.gradle.api.artifacts.DependencyConstraintsMetadata</li>
+   <li>org.gradle.api.artifacts.DependencyResolveDetails.because(java.lang.String)</li>
+   <li>org.gradle.api.artifacts.DependencySubstitution.useTarget(java.lang.Object, java.lang.String)</li>
+   <li>org.gradle.api.artifacts.DependencySubstitutions.Substitution.because(java.lang.String)</li>
+   <li>org.gradle.api.artifacts.DirectDependenciesMetadata</li>
+   <li>org.gradle.api.artifacts.DirectDependencyMetadata</li>
+   <li>org.gradle.api.artifacts.component.ProjectComponentIdentifier.getProjectName()</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyConstraintHandler</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler.getConstraints()</li>
+   <li>org.gradle.api.artifacts.query.ArtifactResolutionQuery.forModule(java.lang.String, java.lang.String, java.lang.String)</li>
+   <li>org.gradle.api.artifacts.query.ArtifactResolutionQuery.withArtifacts(java.lang.Class&lt;? extends org.gradle.api.component.Component&gt;, java.util.Collection&lt;java.lang.Class&lt;? extends org.gradle.api.component.Artifact&gt;&gt;)</li>
+   <li>org.gradle.api.artifacts.repositories.IvyArtifactRepository</li>
+   <li>org.gradle.api.artifacts.repositories.IvyArtifactRepository.MetadataSources</li>
+   <li>org.gradle.api.artifacts.repositories.MavenArtifactRepository</li>
+   <li>org.gradle.api.artifacts.repositories.MavenArtifactRepository.MetadataSources</li>
+   <li>org.gradle.api.artifacts.result.ComponentSelectionReason.isCompositeSubstitution()</li>
+   <li>org.gradle.api.plugins.ExtensionContainer.getExtensionsSchema()</li>
+   <li>org.gradle.api.plugins.ExtensionsSchema</li>
+   <li>org.gradle.api.plugins.ExtensionsSchema.ExtensionSchema</li>
+   <li>org.gradle.api.provider.HasMultipleValues</li>
+   <li>org.gradle.api.provider.SetProperty</li>
+</ul>
+<h3>In ide</h3>
+<ul>
+   <li>org.gradle.plugins.ide.idea.model.Dependency.getScope()</li>
+   <li>org.gradle.plugins.ide.idea.model.Dependency.setScope(java.lang.String)</li>
+</ul>
+<h3>In languageJava</h3>
+<ul>
+   <li>org.gradle.api.tasks.compile.CompileOptions.getAllCompilerArgs()</li>
+   <li>org.gradle.api.tasks.compile.CompileOptions.getCompilerArgumentProviders()</li>
+   <li>org.gradle.api.tasks.compile.CompilerArgumentProvider</li>
+</ul>
+<h3>In languageNative</h3>
+<ul>
+   <li>org.gradle.language.BinaryCollection</li>
+   <li>org.gradle.language.BinaryProvider</li>
+   <li>org.gradle.language.ComponentWithBinaries</li>
+   <li>org.gradle.language.ComponentWithOutputs</li>
+   <li>org.gradle.language.ProductionComponent</li>
+   <li>org.gradle.language.cpp.CppPlatform</li>
+   <li>org.gradle.language.cpp.CppStaticLibrary</li>
+   <li>org.gradle.language.cpp.ProductionCppComponent</li>
+   <li>org.gradle.language.cpp.plugins.CppApplicationPlugin</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithExecutable</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithInstallation</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithLinkFile</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithLinkUsage</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithNativeRuntime</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithObjectFiles</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithRuntimeFile</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithRuntimeUsage</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithSharedLibrary</li>
+   <li>org.gradle.language.nativeplatform.ComponentWithStaticLibrary</li>
+   <li>org.gradle.language.plugins.NativeBasePlugin</li>
+   <li>org.gradle.language.swift.ProductionSwiftComponent</li>
+   <li>org.gradle.language.swift.SwiftStaticLibrary</li>
+   <li>org.gradle.language.swift.plugins.SwiftApplicationPlugin</li>
+</ul>
+<h3>In logging</h3>
+<ul>
+   <li>org.gradle.api.logging.configuration.LoggingConfiguration.getWarningMode()</li>
+   <li>org.gradle.api.logging.configuration.LoggingConfiguration.setWarningMode(org.gradle.api.logging.configuration.WarningMode)</li>
+   <li>org.gradle.api.logging.configuration.WarningMode</li>
+</ul>
+<h3>In platformNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.Linkage</li>
+   <li>org.gradle.nativeplatform.tasks.ExtractSymbols</li>
+   <li>org.gradle.nativeplatform.tasks.StripSymbols</li>
+</ul>
+<h3>In plugins</h3>
+<ul>
+   <li>org.gradle.api.plugins.ApplicationPluginConvention.getExecutableDir()</li>
+   <li>org.gradle.api.plugins.ApplicationPluginConvention.setExecutableDir(java.lang.String)</li>
+   <li>org.gradle.jvm.application.tasks.CreateStartScripts</li>
+   <li>org.gradle.jvm.application.tasks.CreateStartScripts.getExecutableDir()</li>
+</ul>
+<h3>In signing</h3>
+<ul>
+   <li>org.gradle.plugins.signing.SigningExtension.useGpgCmd()</li>
+   <li>org.gradle.plugins.signing.signatory.Signatory</li>
+   <li>org.gradle.plugins.signing.signatory.internal.gnupg.GnupgSettings</li>
+   <li>org.gradle.plugins.signing.signatory.internal.gnupg.GnupgSignatory</li>
+   <li>org.gradle.plugins.signing.signatory.internal.gnupg.GnupgSignatoryFactory</li>
+   <li>org.gradle.plugins.signing.signatory.internal.gnupg.GnupgSignatoryProvider</li>
+</ul>
+<h3>In testingBase</h3>
+<ul>
+   <li>org.gradle.api.tasks.testing.AbstractTestTask.getNoMatchingTestErrorReasons()</li>
+</ul>
+<h3>In testingNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.test.TestComponent</li>
+   <li>org.gradle.nativeplatform.test.TestSuiteComponent</li>
+   <li>org.gradle.nativeplatform.test.cpp.CppTestExecutable</li>
+   <li>org.gradle.nativeplatform.test.plugins.NativeTestingBasePlugin</li>
+   <li>org.gradle.nativeplatform.test.xctest.SwiftXCTestBundle</li>
+   <li>org.gradle.nativeplatform.test.xctest.SwiftXCTestExecutable</li>
+   <li>org.gradle.nativeplatform.test.xctest.tasks.XCTest</li>
+</ul>
+<a name="4.6"></a>
+<h2>Incubating since 4.6</h2>
+<h3>In core</h3>
+<ul>
+   <li>org.gradle.api.tasks.options.Option</li>
+   <li>org.gradle.api.tasks.options.OptionValues</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.StartParameter.isBuildCacheDebugLogging()</li>
+   <li>org.gradle.StartParameter.setBuildCacheDebugLogging(boolean)</li>
+   <li>org.gradle.api.artifacts.Configuration.getAllDependencyConstraints()</li>
+   <li>org.gradle.api.artifacts.Configuration.getDependencyConstraints()</li>
+   <li>org.gradle.api.artifacts.Dependency.because(java.lang.String)</li>
+   <li>org.gradle.api.artifacts.Dependency.getReason()</li>
+   <li>org.gradle.api.artifacts.DependencyConstraintSet</li>
+   <li>org.gradle.api.artifacts.DependencyMetadata.because(java.lang.String)</li>
+   <li>org.gradle.api.artifacts.DependencyMetadata.getReason()</li>
+   <li>org.gradle.api.artifacts.ResolvableDependencies.getDependencyConstraints()</li>
+   <li>org.gradle.api.artifacts.result.ComponentSelectionCause</li>
+   <li>org.gradle.api.artifacts.result.ComponentSelectionDescriptor</li>
+   <li>org.gradle.api.artifacts.result.ComponentSelectionReason.getDescriptions()</li>
+   <li>org.gradle.api.artifacts.result.ResolvedComponentResult.getVariant()</li>
+   <li>org.gradle.api.artifacts.result.ResolvedVariantResult.getDisplayName()</li>
+   <li>org.gradle.api.execution.TaskExecutionGraph.getDependencies(org.gradle.api.Task)</li>
+   <li>org.gradle.api.initialization.Settings.enableFeaturePreview(java.lang.String)</li>
+   <li>org.gradle.api.initialization.definition.InjectedPluginDependencies</li>
+   <li>org.gradle.api.initialization.definition.InjectedPluginDependency</li>
+   <li>org.gradle.process.JavaExecSpec.getArgumentProviders()</li>
+   <li>org.gradle.process.JavaForkOptions.getJvmArgumentProviders()</li>
+</ul>
+<h3>In ideNative</h3>
+<ul>
+   <li>org.gradle.ide.visualstudio.VisualStudioRootExtension</li>
+</ul>
+<h3>In jacoco</h3>
+<ul>
+   <li>org.gradle.testing.jacoco.plugins.JacocoTaskExtension.getAgentClasspath()</li>
+</ul>
+<h3>In languageNative</h3>
+<ul>
+   <li>org.gradle.language.ComponentDependencies</li>
+   <li>org.gradle.language.ComponentWithDependencies</li>
+   <li>org.gradle.language.LibraryDependencies</li>
+   <li>org.gradle.swiftpm.Package</li>
+   <li>org.gradle.swiftpm.Product</li>
+   <li>org.gradle.swiftpm.plugins.SwiftPackageManagerExportPlugin</li>
+   <li>org.gradle.swiftpm.tasks.GenerateSwiftPackageManagerManifest</li>
+</ul>
+<h3>In languageScala</h3>
+<ul>
+   <li>org.gradle.language.scala.tasks.AbstractScalaCompile.getJvmVersion()</li>
+</ul>
+<h3>In platformNative</h3>
+<ul>
+   <li>org.gradle.language.swift.SwiftVersion</li>
+</ul>
+<h3>In plugins</h3>
+<ul>
+   <li>JavaPlugin</li>
+   <li>org.gradle.api.tasks.SourceSet</li>
+   <li>org.gradle.api.tasks.SourceSet.getAnnotationProcessorConfigurationName()</li>
+   <li>org.gradle.api.tasks.SourceSet.getAnnotationProcessorPath()</li>
+</ul>
+<h3>In processServices</h3>
+<ul>
+   <li>org.gradle.process.CommandLineArgumentProvider</li>
+   <li>org.gradle.process.ExecSpec.getArgumentProviders()</li>
+</ul>
+<h3>In testingJvm</h3>
+<ul>
+   <li>org.gradle.api.tasks.testing.Test</li>
+   <li>org.gradle.api.tasks.testing.Test.useJUnitPlatform()</li>
+   <li>org.gradle.api.tasks.testing.junitplatform.JUnitPlatformOptions</li>
+</ul>
+<a name="4.7"></a>
+<h2>Incubating since 4.7</h2>
+<h3>In baseServices</h3>
+<ul>
+   <li>VERSION_HIGHER</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>Task</li>
+   <li>org.gradle.api.artifacts.ConfigurationPublications.getCapabilities()</li>
+   <li>org.gradle.api.capabilities.CapabilitiesMetadata</li>
+   <li>org.gradle.api.capabilities.Capability</li>
+   <li>org.gradle.api.capabilities.MutableCapabilitiesMetadata</li>
+   <li>org.gradle.api.component.BuildableComponent</li>
+   <li>org.gradle.api.component.ComponentWithCoordinates</li>
+   <li>org.gradle.api.component.PublishableComponent</li>
+   <li>org.gradle.api.tasks.TaskContainer.create(java.lang.String, java.lang.Class&lt;T&gt;, java.lang.Object...)</li>
+</ul>
+<h3>In ide</h3>
+<ul>
+   <li>org.gradle.plugins.ide.IdeWorkspace</li>
+   <li>org.gradle.plugins.ide.api.GeneratorTask.getIncremental()</li>
+   <li>org.gradle.plugins.ide.idea.model.IdeaModule.getResourceDirs()</li>
+   <li>org.gradle.plugins.ide.idea.model.IdeaModule.getTestResourceDirs()</li>
+   <li>org.gradle.plugins.ide.idea.model.IdeaModule.setResourceDirs(java.util.Set&lt;java.io.File&gt;)</li>
+   <li>org.gradle.plugins.ide.idea.model.IdeaModule.setTestResourceDirs(java.util.Set&lt;java.io.File&gt;)</li>
+   <li>org.gradle.plugins.ide.idea.model.Module.getResourceFolders()</li>
+   <li>org.gradle.plugins.ide.idea.model.Module.getTestResourceFolders()</li>
+   <li>org.gradle.plugins.ide.idea.model.Module.setResourceFolders(java.util.Set&lt;org.gradle.plugins.ide.idea.model.Path&gt;)</li>
+   <li>org.gradle.plugins.ide.idea.model.Module.setTestResourceFolders(java.util.Set&lt;org.gradle.plugins.ide.idea.model.Path&gt;)</li>
+</ul>
+<h3>In ideNative</h3>
+<ul>
+   <li>org.gradle.ide.xcode.XcodeRootExtension</li>
+   <li>org.gradle.ide.xcode.XcodeWorkspace</li>
+</ul>
+<h3>In reporting</h3>
+<ul>
+   <li>org.gradle.api.reporting.ReportContainer.getEnabledReports()</li>
+</ul>
+<h3>In toolingApi</h3>
+<ul>
+   <li>org.gradle.tooling.model.idea.IdeaContentRoot.getResourceDirectories()</li>
+   <li>org.gradle.tooling.model.idea.IdeaContentRoot.getTestResourceDirectories()</li>
+</ul>
+<a name="4.7."></a>
+<h2>Incubating since 4.7.</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.artifacts.ConfigurationPublications.capability(java.lang.Object)</li>
+</ul>
+<a name="4.8"></a>
+<h2>Incubating since 4.8</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.StartParameter</li>
+   <li>org.gradle.StartParameter.getLockedDependenciesToUpdate()</li>
+   <li>org.gradle.StartParameter.isWriteDependencyLocks()</li>
+   <li>org.gradle.StartParameter.setWriteDependencyLocks(boolean)</li>
+   <li>org.gradle.api.DomainObjectCollection.addLater(org.gradle.api.provider.Provider&lt;? extends T&gt;)</li>
+   <li>org.gradle.api.Project</li>
+   <li>org.gradle.api.Project.getDependencyLocking()</li>
+   <li>org.gradle.api.artifacts.DependencyConstraint</li>
+   <li>org.gradle.api.artifacts.DependencyConstraint.getAttributes()</li>
+   <li>org.gradle.api.artifacts.DependencyMetadata</li>
+   <li>org.gradle.api.artifacts.DependencyMetadata.getAttributes()</li>
+   <li>org.gradle.api.artifacts.ModuleDependency</li>
+   <li>org.gradle.api.artifacts.ModuleDependency.getAttributes()</li>
+   <li>org.gradle.api.artifacts.ResolutionStrategy.activateDependencyLocking()</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyLockingHandler</li>
+   <li>org.gradle.api.resources.TextResourceFactory.fromUri(java.lang.Object)</li>
+</ul>
+<h3>In ivy</h3>
+<ul>
+   <li>org.gradle.api.publish.ivy.IvyModuleDescriptorAuthor</li>
+   <li>org.gradle.api.publish.ivy.IvyModuleDescriptorDescription</li>
+   <li>org.gradle.api.publish.ivy.IvyModuleDescriptorLicense</li>
+   <li>org.gradle.api.publish.ivy.IvyModuleDescriptorSpec</li>
+</ul>
+<h3>In maven</h3>
+<ul>
+   <li>org.gradle.api.artifacts.maven.MavenDeployment.getArtifactId()</li>
+   <li>org.gradle.api.artifacts.maven.MavenDeployment.getGroupId()</li>
+   <li>org.gradle.api.artifacts.maven.MavenDeployment.getPackaging()</li>
+   <li>org.gradle.api.artifacts.maven.MavenDeployment.getVersion()</li>
+   <li>org.gradle.api.publish.maven.MavenPom</li>
+   <li>org.gradle.api.publish.maven.MavenPom.getDescription()</li>
+   <li>org.gradle.api.publish.maven.MavenPom.getInceptionYear()</li>
+   <li>org.gradle.api.publish.maven.MavenPom.getName()</li>
+   <li>org.gradle.api.publish.maven.MavenPom.getUrl()</li>
+   <li>org.gradle.api.publish.maven.MavenPomCiManagement</li>
+   <li>org.gradle.api.publish.maven.MavenPomContributor</li>
+   <li>org.gradle.api.publish.maven.MavenPomContributorSpec</li>
+   <li>org.gradle.api.publish.maven.MavenPomDeveloper</li>
+   <li>org.gradle.api.publish.maven.MavenPomDeveloperSpec</li>
+   <li>org.gradle.api.publish.maven.MavenPomDistributionManagement</li>
+   <li>org.gradle.api.publish.maven.MavenPomIssueManagement</li>
+   <li>org.gradle.api.publish.maven.MavenPomLicense</li>
+   <li>org.gradle.api.publish.maven.MavenPomLicenseSpec</li>
+   <li>org.gradle.api.publish.maven.MavenPomMailingList</li>
+   <li>org.gradle.api.publish.maven.MavenPomMailingListSpec</li>
+   <li>org.gradle.api.publish.maven.MavenPomOrganization</li>
+   <li>org.gradle.api.publish.maven.MavenPomRelocation</li>
+   <li>org.gradle.api.publish.maven.MavenPomScm</li>
+</ul>
+<h3>In signing</h3>
+<ul>
+   <li>org.gradle.plugins.signing.Sign</li>
+   <li>org.gradle.plugins.signing.SigningExtension</li>
+</ul>
+<h3>In toolingApi</h3>
+<ul>
+   <li>org.gradle.tooling.BuildActionExecuter.Builder</li>
+   <li>org.gradle.tooling.IntermediateResultHandler</li>
+   <li>org.gradle.tooling.ProjectConnection.action()</li>
+</ul>
+<a name="4.9"></a>
+<h2>Incubating since 4.9</h2>
+<h3>In core</h3>
+<ul>
+   <li>org.gradle.api.tasks.JavaExec</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.artifacts.CacheableRule</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataContext</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataListerDetails</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataRule</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataVersionLister</li>
+   <li>org.gradle.api.artifacts.DependencyMetadata.getModule()</li>
+   <li>org.gradle.api.artifacts.ModuleVersionSelector.getModule()</li>
+   <li>org.gradle.api.artifacts.component.ComponentSelector.getAttributes()</li>
+   <li>org.gradle.api.artifacts.component.ModuleComponentIdentifier.getModuleIdentifier()</li>
+   <li>org.gradle.api.artifacts.component.ModuleComponentSelector.getModuleIdentifier()</li>
+   <li>org.gradle.api.artifacts.dsl.ComponentMetadataHandler</li>
+   <li>org.gradle.api.artifacts.dsl.ComponentMetadataHandler.all(java.lang.Class&lt;? extends org.gradle.api.artifacts.ComponentMetadataRule&gt;)</li>
+   <li>org.gradle.api.artifacts.dsl.ComponentMetadataHandler.withModule(java.lang.Object, java.lang.Class&lt;? extends org.gradle.api.artifacts.ComponentMetadataRule&gt;)</li>
+   <li>org.gradle.api.artifacts.repositories.MetadataSupplierAware</li>
+</ul>
+<a name="5.0"></a>
+<h2>Incubating since 5.0</h2>
+<h3>In baseServices</h3>
+<ul>
+   <li>VERSION_12</li>
+   <li>org.gradle.api.JavaVersion.isJava12()</li>
+   <li>org.gradle.api.JavaVersion.isJava12Compatible()</li>
+</ul>
+<h3>In buildInit</h3>
+<ul>
+   <li>org.gradle.buildinit.tasks.InitBuild</li>
+   <li>org.gradle.buildinit.tasks.InitBuild.getPackageName()</li>
+   <li>org.gradle.buildinit.tasks.InitBuild.getProjectName()</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>INHERIT</li>
+   <li>org.gradle.api.DomainObjectCollection.addAllLater(org.gradle.api.provider.Provider&lt;? extends java.lang.Iterable&lt;T&gt;&gt;)</li>
+   <li>org.gradle.api.Task.getTimeout()</li>
+   <li>org.gradle.api.artifacts.ComponentMetadataDetails.belongsTo(java.lang.Object, boolean)</li>
+   <li>org.gradle.api.artifacts.ComponentSelection.getDescriptor(java.lang.Class&lt;T&gt;)</li>
+   <li>org.gradle.api.artifacts.ComponentSelection.getMetadata()</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyConstraintHandler</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyConstraintHandler.enforcedPlatform(java.lang.Object)</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyConstraintHandler.platform(java.lang.Object)</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler.enforcedPlatform(java.lang.Object)</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler.platform(java.lang.Object)</li>
+   <li>org.gradle.api.artifacts.repositories.IvyArtifactRepository</li>
+   <li>org.gradle.api.invocation.BuildInvocationDetails</li>
+   <li>org.gradle.api.provider.Provider</li>
+   <li>org.gradle.api.reflect.TypeOf.getConcreteClass()</li>
+</ul>
+<h3>In testingBase</h3>
+<ul>
+   <li>org.gradle.api.tasks.testing.TestFilter.excludeTest(java.lang.String, java.lang.String)</li>
+   <li>org.gradle.api.tasks.testing.TestFilter.excludeTestsMatching(java.lang.String)</li>
+   <li>org.gradle.api.tasks.testing.TestFilter.getExcludePatterns()</li>
+   <li>org.gradle.api.tasks.testing.TestFilter.setExcludePatterns(java.lang.String...)</li>
+</ul>
+<h3>In toolingApi</h3>
+<ul>
+   <li>org.gradle.tooling.ConfigurableLauncher.addArguments(java.lang.Iterable&lt;java.lang.String&gt;)</li>
+   <li>org.gradle.tooling.ConfigurableLauncher.addArguments(java.lang.String...)</li>
+   <li>org.gradle.tooling.ConfigurableLauncher.addJvmArguments(java.lang.Iterable&lt;java.lang.String&gt;)</li>
+   <li>org.gradle.tooling.ConfigurableLauncher.addJvmArguments(java.lang.String...)</li>
+   <li>org.gradle.tooling.LongRunningOperation.addArguments(java.lang.Iterable&lt;java.lang.String&gt;)</li>
+   <li>org.gradle.tooling.LongRunningOperation.addArguments(java.lang.String...)</li>
+   <li>org.gradle.tooling.LongRunningOperation.addJvmArguments(java.lang.Iterable&lt;java.lang.String&gt;)</li>
+   <li>org.gradle.tooling.LongRunningOperation.addJvmArguments(java.lang.String...)</li>
+</ul>
+<a name="5.1"></a>
+<h2>Incubating since 5.1</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>ArtifactTransformException</li>
+   <li>ProjectConfigurationException</li>
+   <li>org.gradle.api.artifacts.repositories.ArtifactRepository</li>
+   <li>org.gradle.api.artifacts.repositories.MavenArtifactRepository</li>
+   <li>org.gradle.api.artifacts.repositories.MavenRepositoryContentDescriptor</li>
+   <li>org.gradle.api.artifacts.repositories.RepositoryContentDescriptor</li>
+   <li>org.gradle.api.artifacts.result.DependencyResult.isConstraint()</li>
+   <li>org.gradle.api.provider.MapProperty</li>
+</ul>
+<h3>In diagnostics</h3>
+<ul>
+   <li>org.gradle.api.tasks.diagnostics.TaskReportTask.getDisplayGroup()</li>
+   <li>org.gradle.api.tasks.diagnostics.TaskReportTask.setDisplayGroup(java.lang.String)</li>
+</ul>
+<h3>In platformNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.MachineArchitecture</li>
+   <li>org.gradle.nativeplatform.OperatingSystemFamily</li>
+   <li>org.gradle.nativeplatform.TargetMachine</li>
+   <li>org.gradle.nativeplatform.TargetMachineFactory</li>
+</ul>
+<h3>In pluginDevelopment</h3>
+<ul>
+   <li>org.gradle.plugin.devel.tasks.ValidateTaskProperties.getEnableStricterValidation()</li>
+   <li>org.gradle.plugin.devel.tasks.ValidateTaskProperties.setEnableStricterValidation(boolean)</li>
+</ul>
+<h3>In signing</h3>
+<ul>
+   <li>org.gradle.plugins.signing.Sign.getSignaturesByKey()</li>
+</ul>
+<h3>In toolingApi</h3>
+<ul>
+   <li>PROJECT_CONFIGURATION</li>
+   <li>TRANSFORM</li>
+   <li>WORK_ITEM</li>
+   <li>org.gradle.tooling.events.BinaryPluginIdentifier</li>
+   <li>org.gradle.tooling.events.PluginIdentifier</li>
+   <li>org.gradle.tooling.events.ScriptPluginIdentifier</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationFailureResult</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationFinishEvent</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationOperationDescriptor</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationOperationResult</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationOperationResult.PluginApplicationResult</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationProgressEvent</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationStartEvent</li>
+   <li>org.gradle.tooling.events.configuration.ProjectConfigurationSuccessResult</li>
+   <li>org.gradle.tooling.events.task.TaskExecutionResult</li>
+   <li>org.gradle.tooling.events.task.TaskOperationDescriptor.getDependencies()</li>
+   <li>org.gradle.tooling.events.task.TaskOperationDescriptor.getOriginPlugin()</li>
+   <li>org.gradle.tooling.events.task.java.JavaCompileTaskOperationResult</li>
+   <li>org.gradle.tooling.events.task.java.JavaCompileTaskOperationResult.AnnotationProcessorResult</li>
+   <li>org.gradle.tooling.events.task.java.JavaCompileTaskOperationResult.AnnotationProcessorResult.Type</li>
+   <li>org.gradle.tooling.events.transform.TransformFailureResult</li>
+   <li>org.gradle.tooling.events.transform.TransformFinishEvent</li>
+   <li>org.gradle.tooling.events.transform.TransformOperationDescriptor</li>
+   <li>org.gradle.tooling.events.transform.TransformOperationDescriptor.SubjectDescriptor</li>
+   <li>org.gradle.tooling.events.transform.TransformOperationDescriptor.TransformerDescriptor</li>
+   <li>org.gradle.tooling.events.transform.TransformOperationResult</li>
+   <li>org.gradle.tooling.events.transform.TransformProgressEvent</li>
+   <li>org.gradle.tooling.events.transform.TransformStartEvent</li>
+   <li>org.gradle.tooling.events.transform.TransformSuccessResult</li>
+   <li>org.gradle.tooling.events.work.WorkItemFailureResult</li>
+   <li>org.gradle.tooling.events.work.WorkItemFinishEvent</li>
+   <li>org.gradle.tooling.events.work.WorkItemOperationDescriptor</li>
+   <li>org.gradle.tooling.events.work.WorkItemOperationResult</li>
+   <li>org.gradle.tooling.events.work.WorkItemProgressEvent</li>
+   <li>org.gradle.tooling.events.work.WorkItemStartEvent</li>
+   <li>org.gradle.tooling.events.work.WorkItemSuccessResult</li>
+</ul>
+<a name="5.2"></a>
+<h2>Incubating since 5.2</h2>
+<h3>In core</h3>
+<ul>
+   <li>org.gradle.api.tasks.JavaExec.getJavaVersion()</li>
+</ul>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.api.artifacts.result.ResolvedComponentResult.getVariants()</li>
+</ul>
+<h3>In languageNative</h3>
+<ul>
+   <li>org.gradle.language.ComponentWithTargetMachines</li>
+   <li>org.gradle.language.swift.SwiftPlatform</li>
+</ul>
+<h3>In maven</h3>
+<ul>
+   <li>org.gradle.api.publish.maven.MavenPublication</li>
+</ul>
+<h3>In platformNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.TargetMachineBuilder</li>
+</ul>
+<h3>In plugins</h3>
+<ul>
+   <li>org.gradle.api.plugins.JavaPlatformExtension</li>
+   <li>org.gradle.api.plugins.JavaPlatformPlugin</li>
+   <li>org.gradle.api.tasks.SourceSetOutput.getGeneratedSourcesDirs()</li>
+</ul>
+<h3>In publish</h3>
+<ul>
+   <li>org.gradle.api.publish.VariantVersionMappingStrategy</li>
+   <li>org.gradle.api.publish.VersionMappingStrategy</li>
+</ul>
+<h3>In testKit</h3>
+<ul>
+   <li>org.gradle.testkit.runner.GradleRunner.getEnvironment()</li>
+   <li>org.gradle.testkit.runner.GradleRunner.withEnvironment(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</li>
+</ul>
+<a name="5.3"></a>
+<h2>Incubating since 5.3</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>ArtifactTypeDefinition</li>
+   <li>UnableToDeleteFileException</li>
+   <li>Usage</li>
+   <li>org.gradle.api.ReplacedBy</li>
+   <li>org.gradle.api.artifacts.ModuleDependency</li>
+   <li>org.gradle.api.artifacts.ModuleDependency.getRequestedCapabilities()</li>
+   <li>org.gradle.api.artifacts.ModuleDependencyCapabilitiesHandler</li>
+   <li>org.gradle.api.artifacts.component.ComponentSelector.getRequestedCapabilities()</li>
+   <li>org.gradle.api.artifacts.dsl.DependencyHandler</li>
+   <li>org.gradle.api.artifacts.result.ResolvedVariantResult.getCapabilities()</li>
+   <li>org.gradle.api.artifacts.transform.CacheableTransform</li>
+   <li>org.gradle.api.artifacts.transform.InputArtifact</li>
+   <li>org.gradle.api.artifacts.transform.InputArtifactDependencies</li>
+   <li>org.gradle.api.artifacts.transform.TransformAction</li>
+   <li>org.gradle.api.artifacts.transform.TransformOutputs</li>
+   <li>org.gradle.api.artifacts.transform.TransformParameters</li>
+   <li>org.gradle.api.artifacts.transform.TransformParameters.None</li>
+   <li>org.gradle.api.artifacts.transform.TransformSpec</li>
+   <li>org.gradle.api.attributes.Bundling</li>
+   <li>org.gradle.api.attributes.java.TargetJvmVersion</li>
+   <li>org.gradle.api.component.AdhocComponentWithVariants</li>
+   <li>org.gradle.api.component.ConfigurationVariantDetails</li>
+   <li>org.gradle.api.component.SoftwareComponentFactory</li>
+   <li>org.gradle.api.component.SoftwareComponentVariant</li>
+   <li>org.gradle.api.reflect.InjectionPointQualifier</li>
+</ul>
+<h3>In maven</h3>
+<ul>
+   <li>org.gradle.api.publish.maven.MavenPom.getProperties()</li>
+</ul>
+<h3>In plugins</h3>
+<ul>
+   <li>JavaBasePlugin</li>
+   <li>org.gradle.api.plugins.FeatureSpec</li>
+   <li>org.gradle.api.plugins.JavaPluginConvention.disableAutoTargetJvm()</li>
+   <li>org.gradle.api.plugins.JavaPluginConvention.getAutoTargetJvmDisabled()</li>
+   <li>org.gradle.api.plugins.JavaPluginExtension.disableAutoTargetJvm()</li>
+</ul>
+<a name="Not found"></a>
+<h2>Incubating since Not found</h2>
+<h3>In coreApi</h3>
+<ul>
+   <li>org.gradle.StartParameter.isConfigureOnDemand()</li>
+   <li>org.gradle.StartParameter.setConfigureOnDemand(boolean)</li>
+</ul>
+<h3>In diagnostics</h3>
+<ul>
+   <li>org.gradle.api.reporting.components.ComponentReport</li>
+   <li>org.gradle.api.reporting.dependents.DependentComponentsReport</li>
+</ul>
+<h3>In ideNative</h3>
+<ul>
+   <li>org.gradle.ide.visualstudio.ConfigFile</li>
+   <li>org.gradle.ide.visualstudio.TextConfigFile</li>
+   <li>org.gradle.ide.visualstudio.TextProvider</li>
+   <li>org.gradle.ide.visualstudio.VisualStudioExtension</li>
+   <li>org.gradle.ide.visualstudio.VisualStudioProject</li>
+   <li>org.gradle.ide.visualstudio.VisualStudioSolution</li>
+   <li>org.gradle.ide.visualstudio.XmlConfigFile</li>
+   <li>org.gradle.plugins.ide.api.PropertyListGeneratorTask</li>
+</ul>
+<h3>In idePlay</h3>
+<ul>
+   <li>org.gradle.play.plugins.ide.PlayIdePlugin</li>
+</ul>
+<h3>In languageJava</h3>
+<ul>
+   <li>org.gradle.language.java.JavaSourceSet</li>
+   <li>org.gradle.language.java.tasks.PlatformJavaCompile</li>
+</ul>
+<h3>In languageJvm</h3>
+<ul>
+   <li>org.gradle.language.jvm.JvmResourceSet</li>
+</ul>
+<h3>In languageNative</h3>
+<ul>
+   <li>org.gradle.language.assembler.AssemblerSourceSet</li>
+   <li>org.gradle.language.assembler.plugins.AssemblerLangPlugin</li>
+   <li>org.gradle.language.assembler.plugins.AssemblerPlugin</li>
+   <li>org.gradle.language.assembler.tasks.Assemble</li>
+   <li>org.gradle.language.c.CSourceSet</li>
+   <li>org.gradle.language.c.plugins.CLangPlugin</li>
+   <li>org.gradle.language.c.plugins.CPlugin</li>
+   <li>org.gradle.language.c.tasks.CCompile</li>
+   <li>org.gradle.language.cpp.CppSourceSet</li>
+   <li>org.gradle.language.cpp.plugins.CppLangPlugin</li>
+   <li>org.gradle.language.cpp.plugins.CppPlugin</li>
+   <li>org.gradle.language.cpp.tasks.CppCompile</li>
+   <li>org.gradle.language.nativeplatform.tasks.AbstractNativeCompileTask</li>
+   <li>org.gradle.language.nativeplatform.tasks.AbstractNativePCHCompileTask</li>
+   <li>org.gradle.language.nativeplatform.tasks.AbstractNativeSourceCompileTask</li>
+   <li>org.gradle.language.objectivec.ObjectiveCSourceSet</li>
+   <li>org.gradle.language.objectivec.plugins.ObjectiveCLangPlugin</li>
+   <li>org.gradle.language.objectivec.plugins.ObjectiveCPlugin</li>
+   <li>org.gradle.language.objectivec.tasks.ObjectiveCCompile</li>
+   <li>org.gradle.language.objectivecpp.ObjectiveCppSourceSet</li>
+   <li>org.gradle.language.objectivecpp.plugins.ObjectiveCppLangPlugin</li>
+   <li>org.gradle.language.objectivecpp.plugins.ObjectiveCppPlugin</li>
+   <li>org.gradle.language.objectivecpp.tasks.ObjectiveCppCompile</li>
+   <li>org.gradle.language.rc.WindowsResourceSet</li>
+   <li>org.gradle.language.rc.plugins.WindowsResourceScriptPlugin</li>
+   <li>org.gradle.language.rc.plugins.WindowsResourcesPlugin</li>
+   <li>org.gradle.language.rc.tasks.WindowsResourceCompile</li>
+</ul>
+<h3>In languageScala</h3>
+<ul>
+   <li>org.gradle.language.scala.ScalaLanguageSourceSet</li>
+   <li>org.gradle.language.scala.ScalaPlatform</li>
+   <li>org.gradle.language.scala.plugins.ScalaLanguagePlugin</li>
+   <li>org.gradle.language.scala.tasks.BaseScalaCompileOptions</li>
+   <li>org.gradle.language.scala.tasks.PlatformScalaCompile</li>
+   <li>org.gradle.language.scala.toolchain.ScalaToolChain</li>
+</ul>
+<h3>In modelCore</h3>
+<ul>
+   <li>org.gradle.model.ConfigurationCycleException</li>
+   <li>org.gradle.model.Defaults</li>
+   <li>org.gradle.model.Each</li>
+   <li>org.gradle.model.Finalize</li>
+   <li>org.gradle.model.InvalidModelRuleDeclarationException</li>
+   <li>org.gradle.model.InvalidModelRuleException</li>
+   <li>org.gradle.model.Managed</li>
+   <li>org.gradle.model.Model</li>
+   <li>org.gradle.model.ModelElement</li>
+   <li>org.gradle.model.ModelMap</li>
+   <li>org.gradle.model.ModelRuleBindingException</li>
+   <li>org.gradle.model.ModelSet</li>
+   <li>org.gradle.model.ModelViewClosedException</li>
+   <li>org.gradle.model.Mutate</li>
+   <li>org.gradle.model.Path</li>
+   <li>org.gradle.model.ReadOnlyModelViewException</li>
+   <li>org.gradle.model.RuleInput</li>
+   <li>org.gradle.model.RuleSource</li>
+   <li>org.gradle.model.RuleTarget</li>
+   <li>org.gradle.model.Rules</li>
+   <li>org.gradle.model.Unmanaged</li>
+   <li>org.gradle.model.Validate</li>
+   <li>org.gradle.model.WriteOnlyModelViewException</li>
+</ul>
+<h3>In platformBase</h3>
+<ul>
+   <li>org.gradle.api.BuildableComponentSpec</li>
+   <li>org.gradle.api.CheckableComponentSpec</li>
+   <li>org.gradle.language.base.DependentSourceSet</li>
+   <li>org.gradle.language.base.FunctionalSourceSet</li>
+   <li>org.gradle.language.base.LanguageSourceSet</li>
+   <li>org.gradle.language.base.ProjectSourceSet</li>
+   <li>org.gradle.language.base.plugins.ComponentModelBasePlugin</li>
+   <li>org.gradle.language.base.plugins.LanguageBasePlugin</li>
+   <li>org.gradle.language.base.sources.BaseLanguageSourceSet</li>
+   <li>org.gradle.platform.base.Application</li>
+   <li>org.gradle.platform.base.ApplicationBinarySpec</li>
+   <li>org.gradle.platform.base.ApplicationSpec</li>
+   <li>org.gradle.platform.base.Binary</li>
+   <li>org.gradle.platform.base.BinaryContainer</li>
+   <li>org.gradle.platform.base.BinarySpec</li>
+   <li>org.gradle.platform.base.BinaryTasks</li>
+   <li>org.gradle.platform.base.BinaryTasksCollection</li>
+   <li>org.gradle.platform.base.ComponentBinaries</li>
+   <li>org.gradle.platform.base.ComponentSpec</li>
+   <li>org.gradle.platform.base.ComponentSpecContainer</li>
+   <li>org.gradle.platform.base.ComponentType</li>
+   <li>org.gradle.platform.base.DependencySpec</li>
+   <li>org.gradle.platform.base.DependencySpecBuilder</li>
+   <li>org.gradle.platform.base.DependencySpecContainer</li>
+   <li>org.gradle.platform.base.GeneralComponentSpec</li>
+   <li>org.gradle.platform.base.InvalidModelException</li>
+   <li>org.gradle.platform.base.Library</li>
+   <li>org.gradle.platform.base.LibraryBinaryDependencySpec</li>
+   <li>org.gradle.platform.base.LibraryBinarySpec</li>
+   <li>org.gradle.platform.base.LibrarySpec</li>
+   <li>org.gradle.platform.base.ModelInstantiationException</li>
+   <li>org.gradle.platform.base.ModuleDependencySpec</li>
+   <li>org.gradle.platform.base.ModuleDependencySpecBuilder</li>
+   <li>org.gradle.platform.base.Platform</li>
+   <li>org.gradle.platform.base.PlatformAwareComponentSpec</li>
+   <li>org.gradle.platform.base.PlatformContainer</li>
+   <li>org.gradle.platform.base.ProjectDependencySpec</li>
+   <li>org.gradle.platform.base.ProjectDependencySpecBuilder</li>
+   <li>org.gradle.platform.base.SourceComponentSpec</li>
+   <li>org.gradle.platform.base.ToolChainRegistry</li>
+   <li>org.gradle.platform.base.TransformationFileType</li>
+   <li>org.gradle.platform.base.TypeBuilder</li>
+   <li>org.gradle.platform.base.VariantComponent</li>
+   <li>org.gradle.platform.base.VariantComponentSpec</li>
+   <li>org.gradle.platform.base.binary.BaseBinarySpec</li>
+   <li>org.gradle.platform.base.component.BaseComponentSpec</li>
+   <li>org.gradle.platform.base.plugins.BinaryBasePlugin</li>
+   <li>org.gradle.platform.base.plugins.ComponentBasePlugin</li>
+</ul>
+<h3>In platformJvm</h3>
+<ul>
+   <li>org.gradle.jvm.Classpath</li>
+   <li>org.gradle.jvm.JarBinarySpec</li>
+   <li>org.gradle.jvm.JvmBinarySpec</li>
+   <li>org.gradle.jvm.JvmByteCode</li>
+   <li>org.gradle.jvm.JvmComponentSpec</li>
+   <li>org.gradle.jvm.JvmLibrary</li>
+   <li>org.gradle.jvm.JvmLibrarySpec</li>
+   <li>org.gradle.jvm.JvmResources</li>
+   <li>org.gradle.jvm.platform.JavaPlatform</li>
+   <li>org.gradle.jvm.plugins.JvmComponentPlugin</li>
+   <li>org.gradle.jvm.toolchain.JavaToolChainRegistry</li>
+   <li>org.gradle.jvm.toolchain.LocalJava</li>
+</ul>
+<h3>In platformNative</h3>
+<ul>
+   <li>org.gradle.language.nativeplatform.DependentSourceSet</li>
+   <li>org.gradle.language.nativeplatform.HeaderExportingSourceSet</li>
+   <li>org.gradle.language.nativeplatform.NativeResourceSet</li>
+   <li>org.gradle.nativeplatform.BuildType</li>
+   <li>org.gradle.nativeplatform.BuildTypeContainer</li>
+   <li>org.gradle.nativeplatform.Flavor</li>
+   <li>org.gradle.nativeplatform.FlavorContainer</li>
+   <li>org.gradle.nativeplatform.NativeBinary</li>
+   <li>org.gradle.nativeplatform.NativeBinarySpec</li>
+   <li>org.gradle.nativeplatform.NativeComponentExtension</li>
+   <li>org.gradle.nativeplatform.NativeComponentSpec</li>
+   <li>org.gradle.nativeplatform.NativeDependencySet</li>
+   <li>org.gradle.nativeplatform.NativeExecutable</li>
+   <li>org.gradle.nativeplatform.NativeExecutableBinary</li>
+   <li>org.gradle.nativeplatform.NativeExecutableBinarySpec</li>
+   <li>org.gradle.nativeplatform.NativeExecutableFileSpec</li>
+   <li>org.gradle.nativeplatform.NativeExecutableSpec</li>
+   <li>org.gradle.nativeplatform.NativeInstallationSpec</li>
+   <li>org.gradle.nativeplatform.NativeLibrary</li>
+   <li>org.gradle.nativeplatform.NativeLibraryBinary</li>
+   <li>org.gradle.nativeplatform.NativeLibraryBinarySpec</li>
+   <li>org.gradle.nativeplatform.NativeLibraryRequirement</li>
+   <li>org.gradle.nativeplatform.NativeLibrarySpec</li>
+   <li>org.gradle.nativeplatform.ObjectFile</li>
+   <li>org.gradle.nativeplatform.PrebuiltLibraries</li>
+   <li>org.gradle.nativeplatform.PrebuiltLibrary</li>
+   <li>org.gradle.nativeplatform.PrebuiltSharedLibraryBinary</li>
+   <li>org.gradle.nativeplatform.PrebuiltStaticLibraryBinary</li>
+   <li>org.gradle.nativeplatform.PreprocessingTool</li>
+   <li>org.gradle.nativeplatform.Repositories</li>
+   <li>org.gradle.nativeplatform.SharedLibraryBinary</li>
+   <li>org.gradle.nativeplatform.SharedLibraryBinarySpec</li>
+   <li>org.gradle.nativeplatform.StaticLibraryBinary</li>
+   <li>org.gradle.nativeplatform.StaticLibraryBinarySpec</li>
+   <li>org.gradle.nativeplatform.TargetedNativeComponent</li>
+   <li>org.gradle.nativeplatform.Tool</li>
+   <li>org.gradle.nativeplatform.platform.Architecture</li>
+   <li>org.gradle.nativeplatform.platform.NativePlatform</li>
+   <li>org.gradle.nativeplatform.platform.OperatingSystem</li>
+   <li>org.gradle.nativeplatform.plugins.NativeComponentModelPlugin</li>
+   <li>org.gradle.nativeplatform.plugins.NativeComponentPlugin</li>
+   <li>org.gradle.nativeplatform.tasks.AbstractLinkTask</li>
+   <li>org.gradle.nativeplatform.tasks.CreateStaticLibrary</li>
+   <li>org.gradle.nativeplatform.tasks.InstallExecutable</li>
+   <li>org.gradle.nativeplatform.tasks.LinkExecutable</li>
+   <li>org.gradle.nativeplatform.tasks.LinkSharedLibrary</li>
+   <li>org.gradle.nativeplatform.tasks.ObjectFilesToBinary</li>
+   <li>org.gradle.nativeplatform.tasks.PrefixHeaderFileGenerateTask</li>
+   <li>org.gradle.nativeplatform.toolchain.Clang</li>
+   <li>org.gradle.nativeplatform.toolchain.CommandLineToolConfiguration</li>
+   <li>org.gradle.nativeplatform.toolchain.Gcc</li>
+   <li>org.gradle.nativeplatform.toolchain.GccCommandLineToolConfiguration</li>
+   <li>org.gradle.nativeplatform.toolchain.GccCompatibleToolChain</li>
+   <li>org.gradle.nativeplatform.toolchain.GccPlatformToolChain</li>
+   <li>org.gradle.nativeplatform.toolchain.NativePlatformToolChain</li>
+   <li>org.gradle.nativeplatform.toolchain.NativeToolChain</li>
+   <li>org.gradle.nativeplatform.toolchain.NativeToolChainRegistry</li>
+   <li>org.gradle.nativeplatform.toolchain.VisualCpp</li>
+   <li>org.gradle.nativeplatform.toolchain.VisualCppPlatformToolChain</li>
+   <li>org.gradle.nativeplatform.toolchain.plugins.ClangCompilerPlugin</li>
+   <li>org.gradle.nativeplatform.toolchain.plugins.GccCompilerPlugin</li>
+   <li>org.gradle.nativeplatform.toolchain.plugins.MicrosoftVisualCppCompilerPlugin</li>
+</ul>
+<h3>In platformPlay</h3>
+<ul>
+   <li>org.gradle.language.coffeescript.CoffeeScriptSourceSet</li>
+   <li>org.gradle.language.javascript.JavaScriptSourceSet</li>
+   <li>org.gradle.language.routes.RoutesSourceSet</li>
+   <li>org.gradle.language.twirl.TwirlImports</li>
+   <li>org.gradle.language.twirl.TwirlSourceSet</li>
+   <li>org.gradle.play.JvmClasses</li>
+   <li>org.gradle.play.PlayApplicationBinarySpec</li>
+   <li>org.gradle.play.PlayApplicationSpec</li>
+   <li>org.gradle.play.PlayPlatformAwareComponentSpec</li>
+   <li>org.gradle.play.PublicAssets</li>
+   <li>org.gradle.play.distribution.PlayDistribution</li>
+   <li>org.gradle.play.distribution.PlayDistributionContainer</li>
+   <li>org.gradle.play.platform.PlayPlatform</li>
+   <li>org.gradle.play.plugins.PlayApplicationPlugin</li>
+   <li>org.gradle.play.plugins.PlayCoffeeScriptPlugin</li>
+   <li>org.gradle.play.plugins.PlayDistributionPlugin</li>
+   <li>org.gradle.play.plugins.PlayJavaScriptPlugin</li>
+   <li>org.gradle.play.plugins.PlayPlugin</li>
+   <li>org.gradle.play.plugins.PlayPluginConfigurations</li>
+   <li>org.gradle.play.plugins.PlayRoutesPlugin</li>
+   <li>org.gradle.play.plugins.PlayTestPlugin</li>
+   <li>org.gradle.play.plugins.PlayTwirlPlugin</li>
+   <li>org.gradle.play.tasks.JavaScriptMinify</li>
+   <li>org.gradle.play.tasks.PlayCoffeeScriptCompile</li>
+   <li>org.gradle.play.tasks.PlayRun</li>
+   <li>org.gradle.play.tasks.RoutesCompile</li>
+   <li>org.gradle.play.tasks.TwirlCompile</li>
+   <li>org.gradle.play.toolchain.PlayToolChain</li>
+</ul>
+<h3>In plugins</h3>
+<ul>
+   <li>org.gradle.jvm.ClassDirectoryBinarySpec</li>
+</ul>
+<h3>In testingBase</h3>
+<ul>
+   <li>org.gradle.api.tasks.testing.AbstractTestTask</li>
+   <li>org.gradle.api.tasks.testing.AbstractTestTask.getBinResultsDir()</li>
+   <li>org.gradle.testing.base.TestSuiteBinarySpec</li>
+   <li>org.gradle.testing.base.TestSuiteContainer</li>
+   <li>org.gradle.testing.base.TestSuiteSpec</li>
+   <li>org.gradle.testing.base.plugins.TestingModelBasePlugin</li>
+</ul>
+<h3>In testingNative</h3>
+<ul>
+   <li>org.gradle.nativeplatform.test.cunit.CUnitTestSuiteBinarySpec</li>
+   <li>org.gradle.nativeplatform.test.cunit.CUnitTestSuiteSpec</li>
+   <li>org.gradle.nativeplatform.test.cunit.plugins.CUnitConventionPlugin</li>
+   <li>org.gradle.nativeplatform.test.cunit.plugins.CUnitPlugin</li>
+   <li>org.gradle.nativeplatform.test.googletest.GoogleTestTestSuiteBinarySpec</li>
+   <li>org.gradle.nativeplatform.test.googletest.GoogleTestTestSuiteSpec</li>
+   <li>org.gradle.nativeplatform.test.googletest.plugins.GoogleTestConventionPlugin</li>
+   <li>org.gradle.nativeplatform.test.googletest.plugins.GoogleTestPlugin</li>
+   <li>org.gradle.nativeplatform.test.plugins.NativeBinariesTestPlugin</li>
+   <li>org.gradle.nativeplatform.test.tasks.RunTestExecutable</li>
+</ul>
+</body></html>

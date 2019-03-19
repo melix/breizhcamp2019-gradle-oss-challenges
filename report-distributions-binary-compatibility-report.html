@@ -1,0 +1,1195 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta charset='utf-8'/><meta http-equiv='content-type' content='text/html; charset=utf-8'/><meta http-equiv='X-UA-Compatible' content='IE=edge'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>Binary compatibility report for Gradle 5.3-SNAPSHOT since 5.2.1</title><link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'/><link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/><link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' rel='stylesheet'/>
+    </head><body>
+        <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+            <div class='container'>
+                <div class='navbar-header'>
+                    <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='navbar-collaspe'>
+                        <span class='sr-only'>Toggle navigation</span><span class='icon-bar'></span><span class='icon-bar'></span><span class='icon-bar'></span>
+                    </button><a class='navbar-brand' href='#'>Binary compatibility report for Gradle 5.3-SNAPSHOT since 5.2.1</a>
+                </div><div class='navbar-collapse collapse'>
+                    <ul class='nav navbar-nav'>
+                        <li class='dropdown'>
+                            <a id='severityDropdown' href='#' class='dropdown-toggle' data-toggle='dropdown'>Severity <span class="caret"></span></a><ul class='dropdown-menu dropdown-severity' role='menu'>
+                                <li role='presentation' class='active'>
+                                    <a role='menuitem' tabindex='-1' href='#'>All levels</a>
+                                </li><li role='presentation'><a role='menuitem' tabindex='-1' href='#'>Error</a></li><li role='presentation'><a role='menuitem' tabindex='-1' href='#'>Warning</a></li><li role='presentation'><a role='menuitem' tabindex='-1' href='#'>Info</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><div class='container'>
+            <div class='jumbotron'>
+                <div class='container'>
+                    <div class='page-header'>
+                        <h1>Binary compatibility</h1><p></p>
+                    </div>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.component.ComponentSelector</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.component.ComponentSelector.getRequestedCapabilities(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-error'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.dsl.RepositoryHandler</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-error'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-danger'>Error</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.dsl.RepositoryHandler.google(org.gradle.api.Action): Is not annotated with @Incubating. If you did this intentionally, please accept the change and provide an explanation:
+                <a class="btn btn-info" role="button" data-toggle="collapse" href="#acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_google_org_gradle_api_Action_" aria-expanded="false" aria-controls="collapseExample">Accept this change</a>
+                <div class="collapse" id="acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_google_org_gradle_api_Action_">
+                  <div class="well">
+                      In order to accept this change add the following to <code>subprojects/distributions/src/changes/accepted-public-api-changes.json</code>:
+                    <pre>{
+    "type": "org.gradle.api.artifacts.dsl.RepositoryHandler",
+    "member": "Method org.gradle.api.artifacts.dsl.RepositoryHandler.google(org.gradle.api.Action)",
+    "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+    "changes": [
+        "Method added to interface"
+    ]
+}</pre>
+                  </div>
+                </div></span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-error'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-danger'>Error</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenCentral(org.gradle.api.Action): Is not annotated with @Incubating. If you did this intentionally, please accept the change and provide an explanation:
+                <a class="btn btn-info" role="button" data-toggle="collapse" href="#acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenCentral_org_gradle_api_Action_" aria-expanded="false" aria-controls="collapseExample">Accept this change</a>
+                <div class="collapse" id="acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenCentral_org_gradle_api_Action_">
+                  <div class="well">
+                      In order to accept this change add the following to <code>subprojects/distributions/src/changes/accepted-public-api-changes.json</code>:
+                    <pre>{
+    "type": "org.gradle.api.artifacts.dsl.RepositoryHandler",
+    "member": "Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenCentral(org.gradle.api.Action)",
+    "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+    "changes": [
+        "Method added to interface"
+    ]
+}</pre>
+                  </div>
+                </div></span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-error'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-danger'>Error</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenCentral(org.gradle.api.Action): Is not annotated with @since 5.3. If you did this intentionally, please accept the change and provide an explanation:
+                <a class="btn btn-info" role="button" data-toggle="collapse" href="#acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenCentral_org_gradle_api_Action_" aria-expanded="false" aria-controls="collapseExample">Accept this change</a>
+                <div class="collapse" id="acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenCentral_org_gradle_api_Action_">
+                  <div class="well">
+                      In order to accept this change add the following to <code>subprojects/distributions/src/changes/accepted-public-api-changes.json</code>:
+                    <pre>{
+    "type": "org.gradle.api.artifacts.dsl.RepositoryHandler",
+    "member": "Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenCentral(org.gradle.api.Action)",
+    "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+    "changes": [
+        "Method added to interface"
+    ]
+}</pre>
+                  </div>
+                </div></span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-error'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-danger'>Error</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenLocal(org.gradle.api.Action): Is not annotated with @Incubating. If you did this intentionally, please accept the change and provide an explanation:
+                <a class="btn btn-info" role="button" data-toggle="collapse" href="#acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenLocal_org_gradle_api_Action_" aria-expanded="false" aria-controls="collapseExample">Accept this change</a>
+                <div class="collapse" id="acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenLocal_org_gradle_api_Action_">
+                  <div class="well">
+                      In order to accept this change add the following to <code>subprojects/distributions/src/changes/accepted-public-api-changes.json</code>:
+                    <pre>{
+    "type": "org.gradle.api.artifacts.dsl.RepositoryHandler",
+    "member": "Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenLocal(org.gradle.api.Action)",
+    "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+    "changes": [
+        "Method added to interface"
+    ]
+}</pre>
+                  </div>
+                </div></span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-error'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-danger'>Error</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenLocal(org.gradle.api.Action): Is not annotated with @since 5.3. If you did this intentionally, please accept the change and provide an explanation:
+                <a class="btn btn-info" role="button" data-toggle="collapse" href="#acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenLocal_org_gradle_api_Action_" aria-expanded="false" aria-controls="collapseExample">Accept this change</a>
+                <div class="collapse" id="acceptorg_gradle_api_artifacts_dsl_RepositoryHandlerMethod_org_gradle_api_artifacts_dsl_RepositoryHandler_mavenLocal_org_gradle_api_Action_">
+                  <div class="well">
+                      In order to accept this change add the following to <code>subprojects/distributions/src/changes/accepted-public-api-changes.json</code>:
+                    <pre>{
+    "type": "org.gradle.api.artifacts.dsl.RepositoryHandler",
+    "member": "Method org.gradle.api.artifacts.dsl.RepositoryHandler.mavenLocal(org.gradle.api.Action)",
+    "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+    "changes": [
+        "Method added to interface"
+    ]
+}</pre>
+                  </div>
+                </div></span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.ModuleDependency</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.ModuleDependency.capabilities(org.gradle.api.Action): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.ModuleDependency.getRequestedCapabilities(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.ModuleDependencyCapabilitiesHandler</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.ModuleDependencyCapabilitiesHandler: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.ModuleDependencyCapabilitiesHandler.requireCapabilities(java.lang.Object[]): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.ModuleDependencyCapabilitiesHandler.requireCapability(java.lang.Object): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.result.ResolvedVariantResult</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.result.ResolvedVariantResult.getCapabilities(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-warning'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.ArtifactTransformDependencies</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.ArtifactTransformDependencies: Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Class has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.ArtifactTransformDependencies.getFiles(): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-warning'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.ArtifactTransformSpec</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.ArtifactTransformSpec: Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Class has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.ArtifactTransformSpec.configuration(org.gradle.api.Action): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.ArtifactTransformSpec.getActionClass(): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.ArtifactTransformSpec.getConfiguration(): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.ArtifactTransformSpec.getFrom(): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.ArtifactTransformSpec.getTo(): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.ArtifactTransformSpec.setActionClass(java.lang.Class): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.CacheableTransform</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.CacheableTransform: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.InputArtifact</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.InputArtifact: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.InputArtifactDependencies</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.InputArtifactDependencies: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-warning'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.PrimaryInput</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.PrimaryInput: Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Class has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-warning severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.TransformAction</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.TransformAction: Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Class type changed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformAction.value(): Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Method has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformAction.getParameters(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformAction.transform(org.gradle.api.artifacts.transform.TransformOutputs): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.TransformOutputs</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.TransformOutputs: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformOutputs.dir(java.lang.Object): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformOutputs.file(java.lang.Object): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.TransformParameters</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.TransformParameters: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.TransformParameters$None</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.TransformParameters$None: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.TransformSpec</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.TransformSpec: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformSpec.getFrom(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformSpec.getParameters(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformSpec.getTo(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.artifacts.transform.TransformSpec.parameters(org.gradle.api.Action): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-warning'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.transform.Workspace</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.artifacts.transform.Workspace: Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Class has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.artifacts.type.ArtifactTypeDefinition</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field DIRECTORY_TYPE: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field ZIP_TYPE: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.attributes.Bundling</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.attributes.Bundling: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field EXTERNAL: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field EMBEDDED: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field BUNDLING_ATTRIBUTE: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field SHADOWED: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.attributes.java.TargetJvmVersion</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.attributes.java.TargetJvmVersion: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field TARGET_JVM_VERSION_ATTRIBUTE: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.attributes.Usage</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field JAVA_API_JARS: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.component.AdhocComponentWithVariants</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.component.AdhocComponentWithVariants: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.AdhocComponentWithVariants.addVariantsFromConfiguration(org.gradle.api.artifacts.Configuration,org.gradle.api.Action): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.component.ConfigurationVariantDetails</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.component.ConfigurationVariantDetails: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.ConfigurationVariantDetails.getConfigurationVariant(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.ConfigurationVariantDetails.mapToMavenScope(java.lang.String,boolean): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.ConfigurationVariantDetails.skip(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.component.SoftwareComponentFactory</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.component.SoftwareComponentFactory: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.SoftwareComponentFactory.adhoc(java.lang.String): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.component.SoftwareComponentVariant</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.component.SoftwareComponentVariant: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.SoftwareComponentVariant.getArtifacts(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.SoftwareComponentVariant.getCapabilities(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.SoftwareComponentVariant.getDependencies(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.SoftwareComponentVariant.getDependencyConstraints(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.component.SoftwareComponentVariant.getGlobalExcludes(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.model.ObjectFactory</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.model.ObjectFactory.fileCollection(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.plugins.FeatureSpec</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.plugins.FeatureSpec: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.plugins.FeatureSpec.capability(java.lang.String,java.lang.String,java.lang.String): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.plugins.FeatureSpec.usingSourceSet(org.gradle.api.tasks.SourceSet): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.plugins.JavaBasePlugin</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Field UNPUBLISHABLE_VARIANT_ARTIFACTS: New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-warning'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.plugins.JavaPlatformPlugin</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-warning'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-warning'>Warning</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Constructor JavaPlatformPlugin: Changed public API (@Incubating/@Deprecated)</span><ul>
+                                        <li>Constructor has been removed</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.plugins.JavaPluginConvention</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.plugins.JavaPluginConvention.disableAutoTargetJvm(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Abstract method has been added to this class</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.plugins.JavaPluginConvention.getAutoTargetJvmDisabled(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Abstract method has been added to this class</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.plugins.JavaPluginExtension</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.plugins.JavaPluginExtension.disableAutoTargetJvm(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.plugins.JavaPluginExtension.registerFeature(java.lang.String,org.gradle.api.Action): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.publish.maven.MavenPom</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.publish.maven.MavenPom.getProperties(): New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Method added to interface</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.reflect.InjectionPointQualifier</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.reflect.InjectionPointQualifier: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.reflect.InjectionPointQualifier.supportedTypes(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-info'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.ReplacedBy</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Class org.gradle.api.ReplacedBy: New public API in 5.3 (@Incubating)</span><ul>
+                                        <li>Interface has been added</li>
+                                    </ul>
+                                </td>
+                            </tr><tr class='bincompat-error severity-info'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-info'>Info</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.ReplacedBy.value(): New public API in 5.3 (@Incubating)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class='panel panel-default severity-accepted'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>Class org.gradle.api.tasks.testing.Test</h3>
+                </div><div class='panel-body'>
+                    <table class='table table-striped table-bordered'>
+                        <tbody>
+                            <tr class='bincompat-error severity-accepted'>
+                                <td>
+                                    <h4>
+                                        <span class='label label-success'>Accepted</span>
+                                    </h4>
+                                </td><td>
+                                    <span>Method org.gradle.api.tasks.testing.Test.getForkOptionsFactory(): Is not annotated with @since 5.3. Reason for accepting this: <b>Added injection method</b></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><script src='https://code.jquery.com/jquery-1.11.0.min.js'></script><script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script>
+                
+$(document).ready(function () {
+        var severity = null;
+        doFilter();
+        function doFilter() {
+          var severityClass = "severity-" + severity;
+          $('.panel').hide();
+          $('.bincompat-error').hide();
+          $('.bincompat-error').filter(function () {
+              return (severity==null || $(this).hasClass(severityClass));
+          }).show();
+          $('.panel').filter(function () {
+              return (severity==null || $(this).hasClass(severityClass));
+          }).show();
+        }
+        $(".dropdown-severity li a").click(function() {
+          severity = $(this).text().toLowerCase();
+          if (severity==="all levels") {
+            severity = null;
+          }
+          doFilter();
+        });
+});
+            </script>
+        </div>
+    </body>
+</html>
