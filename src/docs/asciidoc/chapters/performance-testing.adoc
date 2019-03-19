@@ -1,0 +1,46 @@
+== Performance testing
+
+=== Performance is a feature
+
+* more than 100 performance tests
+** both synthetic projects and real world scenarios
+** tested on each commit
+** no merge until performance tests are green
+* https://blog.gradle.org/performance-is-a-feature[performance blog post]
+
+=== Performance tests
+
+* cross-version performance tests
+** compares different versions, for a _single scenario_
+* cross-build performance tests
+** for a single version, compares different _scenarios_ (eg. incremental vs clean build)
+* ad-hoc performance tests
+** for development purposes only
+** executes a performance test _with profiling_
+** generates nice flame graphs
+
+=== Performance tests
+
+image:perf-test.png[width=451, height=381]
+
+=== Flame graphs
+
+image:flame-backward-diff-vs-current.svg[width=100%, height=500]
+
+=== icicle graphs
+
+image:icicle-backward-diff-vs-current.svg[width=100%, height=500]
+
+=== Performance reports
+
+++++
+<iframe src="../performance/report/index.html" width="100%" height="600"></iframe>
+++++
+
+=== Gradle profiler
+
+* See https://github.com/gradle/gradle-profiler[Gradle profiler] on GitHub
+* Allows profiling _your_ build
+* Generates flame graphs, memory snapshots, ...
+
+

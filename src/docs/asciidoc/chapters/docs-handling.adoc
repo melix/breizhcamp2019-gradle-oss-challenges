@@ -1,0 +1,7 @@
+== Documentation
+
+* Released alongside the distribution
+* Must be versioned
+** For long we missed links to older releases
+
+Lesson learnt: never happy with docs

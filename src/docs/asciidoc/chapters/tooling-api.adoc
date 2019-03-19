@@ -1,0 +1,23 @@
+== The Tooling API
+
+=== The Tooling API
+
+* Allows "embedding" Gradle
+* Mostly for IDEs
+* Must support _older_ releases (backwards compatibility)
+* Must support _newer_ releases (forward compatibility)
+
+=== How it works
+
+* Communication protocol based on serialization
+** Daemon is required
+** Models passed through build invocations
+* Backwards compatibility
+** Handled similarly to the regular process
+* Forward compatiblity
+** Inteface-based protocol
+** Default implementation when missing methods
+
+=== Cross-version testing
+
+image:tapi.png[width=605, height=241]

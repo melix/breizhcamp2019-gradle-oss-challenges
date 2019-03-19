@@ -1,0 +1,34 @@
+== Feature lifecycle
+
+=== Incubating APIs
+
+* When a feature is introduced, _always_ `@Incubating`
+* Doesn't mean _beta_, means _may_ change or go away
+* Allows us to remove without _deprecating_
+* We haven't been good at de-incubating
+
+=== Incubation report
+
+++++
+<iframe src="../incubation/index.html" width="100%" height="600" class="stretch"></iframe>
+++++
+
+=== Typical deprecation handling
+
+* Deprecate in version `MAJOR`
+* Warn users about deprecations
+* Remove in `MAJOR+1`
+
+=== Exceptions to the rule
+
+* If `MAJOR+1` is close enough, deprecate for removal in `MAJOR+2`
+* "soft deprecation" for very widely used features
+** e.g: `compile` and `runtime` configurations
+** very hard to remove!
+
+=== Preparing users for changes
+
+* Build scans report deprecations
+
+image:scans-deprecations.png[height=305]
+

@@ -1,0 +1,31 @@
+== Binary compatibility
+
+=== Checking binary compatibility
+
+* Important for build authors (build scripts)
+* **and** for plugin authors
+
+* Use the `japicmp-gradle-plugin`
+* Checked on every commit
+* Changes **must** be accepted and documented
+
+=== Binary compatibility report
+
+++++
+<iframe src="../binary-compat/index.html" width="100%" height="600"></iframe>
+++++
+
+=== Fixing binary compatibility
+
+* Sometimes we _have to_ remove internal APIs
+* But some plugins use them/reference them
+* Often accidental leakage in public APIs (e.g `AbstractTask`)
+* Solution: runtime decoration of classes
+** Decorates classes with the missing methods
+** Advantage: source-compatible and binary-compatible
+
+=== Runtime decoration use-cases
+
+* Conversion of plugins from Groovy to Java
+* Removal of internal/deprecated types
+

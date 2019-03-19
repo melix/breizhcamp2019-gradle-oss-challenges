@@ -1,0 +1,38 @@
+== Non-technical aspects
+
+=== Handling community
+
+> My problem is the most important
+
+=== Handling community
+
+> I don't understand why you do this
+
+=== Handling community
+
+> This should be easy, fix it!
+
+=== Handling community
+
+* Twitter summoning
+
+=== Taking distance from swearing
+
+image:twitter-angry.png[width=594, height=213]
+
+=== Taking distaince from swearing
+
+image:twitter-happy.png[width=586, height=236]
+
+=== Guidelines
+
+* We had to add a https://gradle.org/conduct/[Code of Conduct]
+* Referenced in GitHub issue template
+
+=== Competing priorities
+
+* Gradle is a commercial company
+* Offers a free-product (Gradle Build Tool)
+* Sponsored work (shipped into Build Tool)
+* Commercial product (Gradle Enterprise)
+

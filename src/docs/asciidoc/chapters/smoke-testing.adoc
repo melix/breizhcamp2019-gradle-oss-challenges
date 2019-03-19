@@ -1,0 +1,18 @@
+== Smoke testing
+
+=== Testing well known plugins
+
+* Test coverage is never enough
+* Despite our efforts, popular plugins use internal APIs
+* Smoke tests to discover breaking changes
+** Spring Dependency Management, Android, Shadow plugins
+** Netflix Nebula plugins (lint, recommender, ...)
+** Asciidoctor, Spotbugs, Docker plugins etc...
+
+=== Improvement process
+
+* If a user reports a regression
+* and that it's a popular plugin
+* then add a smoke test for the plugin
+
+Then **consider a plugin API** for missing pieces

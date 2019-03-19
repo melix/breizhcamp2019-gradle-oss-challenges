@@ -10,15 +10,15 @@ ifndef::sourcedir[:sourcedir: ../java]
 :title-slide-transition-speed: fast
 :icons: font
 
-= : Switching to Gradle
+= : Challenges of maintaining OSS
 
 +++<h2>+++
-Maturity, performance and pleasure!
+The case of Gradle
 +++</h2>+++
 
-Cédric Champeau (@CedricChampeau) & Louis Jacomet (@ljacomet) - Gradle Inc.
+Cédric Champeau (@CedricChampeau)
 
-== Who are we?
+== Who am I?
 
 [%notitle]
 === Cedric
@@ -41,30 +41,38 @@ Misc OSS contribs'''
 }
 ----
 
-[%notitle]
-=== Louis
-[source,groovy]
-----
-speaker {
-    name 'Louis Jacomet'
-    company 'Gradle Inc'
-    past 'Terracotta / Ehcache',
-              'Freelance consultant',
-        failures Stream.of(bugs),
-        twitter '@ljacomet',
-        github 'ljacomet',
-        extraDescription '''Not fully figured out
-how to stay out of management?!?'''
-}
-----
-
 include::chapters/about-gradle.adoc[]
 
-== A screencast
+include::chapters/jvm-compatibility.adoc[]
 
-screencast:step1[]
+include::chapters/feature-lifecycle.adoc[]
+
+include::chapters/binary-compatibility.adoc[]
+
+include::chapters/smoke-testing.adoc[]
+
+include::chapters/tooling-api.adoc[]
+
+include::chapters/performance-testing.adoc[]
+
+include::chapters/docs-handling.adoc[]
+
+include::chapters/misc.adoc[]
 
 == Conclusion
+
+=== On CI
+
+* We use TeamCity
+* Each commit triggers ~500 builds
+* Lots of build outputs reused thanks to the build cache
+** Dramatically reduces feedback loop
+** Available for Apache Maven too!
+
+=== Conclusion
+
+* Learnt things the hard way
+* Automation is key to success
 
 === Gradle Enterprise
 
@@ -73,15 +81,3 @@ screencast:step1[]
 * Improved build scan feature set
 ** Searchable build history
 ** Build comparison
-
-=== Sessions at Devoxx BE
-
-* https://dvbe18.confinabox.com/talk/DBF-1594/project_versioning_like_a_git[Project versioning like a git]
-** Matthieu Brouillard
-** Wednesday, 13:30 - 13:45 Room 5
-
-* https://dvbe18.confinabox.com/talk/VFH-6802/Improving_Android_Build_Performance[Improving Android Build performance]
-** Cédric Champeau
-**  Thursday, 16:30 - 17:15 Room 3
-
-
