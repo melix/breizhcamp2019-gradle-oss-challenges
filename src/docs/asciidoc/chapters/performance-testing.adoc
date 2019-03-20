@@ -34,7 +34,7 @@ image:icicle-backward-diff-vs-current.svg[width=100%, height=500]
 === Performance reports
 
 ++++
-<iframe src="../performance/report/index.html" width="100%" height="600"></iframe>
+<iframe src="performance/report/index.html" width="100%" height="600"></iframe>
 ++++
 
 === Gradle profiler
