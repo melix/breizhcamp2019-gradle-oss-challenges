@@ -27,7 +27,6 @@ Cédric Champeau (@CedricChampeau)
 speaker {
     name 'Cédric Champeau'
     company 'Gradle Inc'
-    oss 'Apache Groovy committer',
     successes 'Static type checker',
               'Static compilation',
               'Traits',
