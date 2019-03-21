@@ -1,5 +1,7 @@
 == Documentation
 
+* Now built with Asciidoctor (for long, docbook!)
+* Over 1000+ pages
 * Released alongside the distribution
 * Must be versioned
 ** For long we missed links to older releases

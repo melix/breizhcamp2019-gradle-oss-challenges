@@ -1,4 +1,4 @@
-== Java version
+== First challenge: Java version
 
 === Gradle
 

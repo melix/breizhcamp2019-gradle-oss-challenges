@@ -40,6 +40,27 @@ The company behind Gradle.
 * (Gradle consulting, support, development services etc.)
 * (Training: online, public and in-house)
 
+=== Gradle Enterprise
+
+[%step]
+* Commercial product - Developer Productivity
+* *Build Scans*
+** persistent shareable record
+** of what happened during a build
+* *Build Cache*
+** reuse of build outputs
+* On premise install, distributed cache, build history, dashboards, export API etc...
+
+=== Gradle Enterprise
+
+image::gradle-enterprise.png[width=80%, height=80%]
+
+=== Free Build Scans on SaaS
+
+* link:https://scans.gradle.com/[scans.gradle.com]
+* Already used by many OSS projects
+* `gradle --scan`
+
 === Gradle is hiring!
 
 * Fully distributed development team
