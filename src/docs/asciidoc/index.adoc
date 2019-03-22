@@ -45,6 +45,8 @@ include::chapters/about-gradle.adoc[]
 
 include::chapters/jvm-compatibility.adoc[]
 
+include::chapters/integ-testing.adoc[]
+
 include::chapters/feature-lifecycle.adoc[]
 
 include::chapters/binary-compatibility.adoc[]
@@ -57,27 +59,14 @@ include::chapters/performance-testing.adoc[]
 
 include::chapters/docs-handling.adoc[]
 
+include::chapters/ci.adoc[]
+
 include::chapters/misc.adoc[]
 
 == Conclusion
-
-=== On CI
-
-* We use TeamCity
-* Each commit triggers ~500 builds
-* Lots of build outputs reused thanks to the build cache
-** Dramatically reduces feedback loop
-** Available for Apache Maven too!
 
 === Conclusion
 
 * Learnt things the hard way
 * Automation is key to success
 
-=== Gradle Enterprise
-
-* On premise build cache and build scan solution
-* Out of the box solution for distributed build cache
-* Improved build scan feature set
-** Searchable build history
-** Build comparison

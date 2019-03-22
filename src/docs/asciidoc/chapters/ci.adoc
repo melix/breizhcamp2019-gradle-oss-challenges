@@ -1,0 +1,32 @@
+== Continous integration
+
+=== On CI
+
+* We use TeamCity
+* Each commit triggers ~500 builds
+* Lots of build outputs reused thanks to the build cache
+** Dramatically reduces feedback loop
+** Available for Apache Maven too!
+
+=== Staged builds
+
+* Sanity check
+** Compile
+** Checkstyle, Spotbugs, CodeNarc, ...
+** Binary compatibility
+*  Branch build (x2)
+** Integration tests
+** Linux and Windows
+** Performance tests
+** Gradleception
+
+
+=== Staged builds
+
+* Merge accept
+** Cross-version testing
+** More TAPI tests
+** Smoke tests
+* Daily build
+** Slow performance tests
+** Internal variants test (slower code paths)

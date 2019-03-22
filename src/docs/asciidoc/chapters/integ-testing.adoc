@@ -1,0 +1,15 @@
+== Tests
+
+=== Unit tests
+
+* Very fast
+* Using Groovy/Spock (BDD)
+
+=== Integration tests
+
+[%step]
+* A lot of them
+* Much (much) slower
+* Abused because of complexity of setting up unit tests
+* Advice: write test fixtures asap
+
