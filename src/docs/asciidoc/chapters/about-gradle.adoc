@@ -22,7 +22,7 @@ Gradle is a build and automation tool.
 === Gradle in figures
 
 [%step]
-* 9.0M downloads / month)
+* 9.0M downloads / month
 * 3K+ plugins
 * 300K builds/week @LinkedIn
 * dot release every ~6 weeks
